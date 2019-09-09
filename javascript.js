@@ -1,5 +1,4 @@
 var Latiner;
-
-var Kvateret;
-
-Latiner =""
+Latiner ="Første del"
+var Kvarteret;
+Kvarteret ="Sidste del"
