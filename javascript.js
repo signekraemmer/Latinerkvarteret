@@ -6,3 +6,5 @@ Kvarteret ="Sidste del";
 var Sammen;
 
 Sammen="Latiner Kvarteret";
+
+console.log(Sammen)
