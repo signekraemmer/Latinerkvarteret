@@ -1,4 +1,8 @@
 var Latiner;
-Latiner ="Første del"
+Latiner ="Første del";
 var Kvarteret;
-Kvarteret ="Sidste del"
+Kvarteret ="Sidste del";
+
+var Sammen;
+
+Sammen="Latiner Kvarteret";
