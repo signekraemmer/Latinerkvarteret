@@ -1,14 +1,104 @@
-
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
+
 body{
-  background-color: #d5cece;
+  background-color: #ffffff;
 }
 
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Centers items vertically */
+  min-height: 8vh; /* The height or "thickness" of the menu bar background */
+  background-color: #5d4954;
+}
 
-/*--------- HEADER --------*/
+/* Here starts the code for the navigation bar */
 
+.logo{
+  color: white;
+  text-transform: uppercase; /* Makes the text upper case */
+  letter-spacing: 5px; /* The space between the letters */
+  font-size: 28px;
+}
 
-/*--------- NAV BAR --------*/
+/* Adjusts the items inside the nav (in this case, their position) */
+.navlinks{
+  display: flex;
+  justify-content: space-around;
+  width: 35%; /* The width between the menu points */
+}
+
+/* Adjusts the link text */
+.navlinks a{
+  color: #FFFFFF; /* Color of the links */
+  text-decoration: none; /* Removes the bars under the links */
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Adjusts the list items (in this case the style) */
+.navlinks li{
+  list-style: none; /* Removes the bullet points */
+}
+
+/* Here starts the code for the burger menu */
+
+/* Hides the burger menu on desktop */
+.burger{
+  display: none;
+}
+
+/* The aesthetics of the burger menu */
+.burger div{
+  width: 25px; /* How long the lines are */
+  height: 2px; /* How "thick" the lines are */
+  background-color: #FFFFFF; /* The color of the lines in the burger */
+  margin: 7px; /* The spacing between the lines */
+}
+
+/* Ghetto fix for keeping the menu points spaced nicely when full screen */
+@media screen and (max-width:1024px/* The width at where the change happens */){
+  .navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 75%; /* The width between the menu points */
+  }
+}
+
+/* For mobile */
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden; /* Makes us unable to scroll at the bottom of the page, which in essence hides the container we pushed off-screen with transform translateX */
+  }
+  .navlinks{
+    position: absolute;
+    right: 0px; /* Makes it stick to the right side */
+    height: 92vh;
+    top: 8vh;
+    background-color: #5d4954; /* The background of the new menu bar */
+    display: flex;
+    flex-direction: column; /* Puts the menu points in a column, making them go down */
+    align-items: center; /* Puts the menu points in the center of the column */
+    width: 50%; /* The width of the menu column. T H I C C */
+    transform: translateX(100%); /* Moves the container, off the screen */
+    transition: transform 0.5s ease-in; /* Makes the column ease in and out */
+  }
+
+  .navlinks li{
+    opacity: 0; /* Hides the menu points, by turning them invisible */
+  }
+
+  .burger{
+    display: block; /* Makes our burger menu visible */
+    cursor: pointer; /* Turns the cursor into the tiny hand, with the tiny fingers, when hovering the burger */
+  }
+}
+
+.nav-active{
+  transform: translateX(0%); /* Puts our column back into view */
+}
