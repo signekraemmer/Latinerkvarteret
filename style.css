@@ -8,6 +8,10 @@ body{
   background-color: #ffffff;
 }
 
+header{
+  
+}
+
 nav{
   display: flex;
   justify-content: space-around;
