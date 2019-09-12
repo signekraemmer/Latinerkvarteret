@@ -102,3 +102,10 @@ nav{
 .nav-active{
   transform: translateX(0%); /* Puts our column back into view */
 }
+
+/* Footer */
+footer{
+  background-color: #000000;
+  height: 20px;
+
+}
