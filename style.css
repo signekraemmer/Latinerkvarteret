@@ -11,6 +11,7 @@ body{
 header{
   margin: 0px;
 }
+
 /* The slideshow in the header */
 .mySlides{
   max-height: 300px;
@@ -18,9 +19,6 @@ header{
 }
 
 /* The flashing text in the header */
-
-
-}
 
 nav{
   display: flex;
