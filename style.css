@@ -11,9 +11,16 @@ body{
 header{
 
 }
+/* The slideshow in the header */
 .mySlides{
   max-height: 300px;
 }
+
+/* The flashing text in the header */
+.Index{
+
+}
+
 nav{
   display: flex;
   justify-content: space-around;
@@ -41,6 +48,7 @@ nav{
 /* Adjusts the link text */
 .navlinks a{
   color: #FFFFFF; /* Color of the links */
+  font-family: Hind;
   text-decoration: none; /* Removes the bars under the links */
   letter-spacing: 1px;
   font-weight: bold;
@@ -51,6 +59,7 @@ nav{
 .navlinks li{
   list-style: none; /* Removes the bullet points */
 }
+
 
 /* Here starts the code for the burger menu */
 

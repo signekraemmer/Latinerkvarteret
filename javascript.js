@@ -12,3 +12,11 @@ function carousel() {
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+window.addEventListener("load", function() {
+    var f = document.getElementById('Index');
+    setInterval(function() {
+        f.style.display = (f.style.display == 'none' ? '' : 'none');
+    }, 1000);
+
+}, false);
