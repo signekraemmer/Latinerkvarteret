@@ -159,8 +159,21 @@ nav{
 footer{
   text-align: center;
 }
-.box {
+.box1 {
   text-align: left;
+  float: left;
+  width: 33.33%; /* Use 33.33% if there sould be 3 box/images */
+  padding: 20px; /* if you want space between the images */
+}
+.box2 {
+  text-align: inherit;
+  align-content: center;
+  float: left;
+  width: 33.33%; /* Use 33.33% if there sould be 3 box/images */
+  padding: 20px; /* if you want space between the images */
+}
+.box3 {
+  text-align: right;
   float: left;
   width: 33.33%; /* Use 33.33% if there sould be 3 box/images */
   padding: 20px; /* if you want space between the images */
@@ -169,5 +182,5 @@ footer{
 .clearfix::after { /* The ::after selector inserts something after the content of each selected element(s). */
   content: " "; /* Older browser do not support empty content */
   clear: both;
-  display: table;
+  display: inline;
 }
