@@ -166,6 +166,11 @@ nav{
 footer{
   text-align: center;
 }
+
+footer img{
+  
+}
+
 .box1 {
   text-align: left;
   float: left;
@@ -173,8 +178,7 @@ footer{
   padding: 20px; /* if you want space between the images */
 }
 .box2 {
-  text-align: inherit;
-  align-content: center;
+  text-align: center;
   float: left;
   width: 33.33%; /* Use 33.33% if there sould be 3 box/images */
   padding: 20px; /* if you want space between the images */
