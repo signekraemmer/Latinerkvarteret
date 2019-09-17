@@ -120,14 +120,15 @@ nav{
 /* Footer */
 footer{
   background-color: #ffff19;
-  margin-bottom: 0px;
   text-align: center;
-  padding: 20px;
 }
-#fot{
-  display: grid;
-  grid-template-columns: auto auto auto;
+.box {
+  float: left;
+  width: 33.33%; /* Use 33.33% if there sould be 3 box/images */
+  padding: 20px; /* if you want space between the images */
 }
-.fotgrid{
-  width: 20%;
+
+.clearfix::after {
+  clear: both;
+  display: table;
 }
