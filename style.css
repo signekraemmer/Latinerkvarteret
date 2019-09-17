@@ -30,12 +30,15 @@ nav{
 
 /* Here starts the code for the navigation bar */
 
-.logo{
-  color: white;
-  text-transform: uppercase; /* Makes the text upper case */
-  letter-spacing: 5px; /* The space between the letters */
-  font-size: 28px;
-}
+/* WARNING: Dump code for the logo in navbar */
+/* .logo{ */
+  /* color: white; */
+  /* Makes the text upper case */
+  /* text-transform: uppercase; */
+  /* The space between the letters */
+  /* letter-spacing: 5px; */
+  /* font-size: 28px; */
+/* } */
 
 /* Adjusts the items inside the nav (in this case, their position) */
 .navlinks{
