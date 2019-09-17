@@ -154,6 +154,13 @@ nav{
 .nav-active{
   transform: translateX(0%); /* Puts our column back into view */
 }
+/* body */
+
+.gråboks{
+  background-color: #737373;
+  height: 100%;
+  width: 75%;
+}
 
 /* Footer */
 footer{
