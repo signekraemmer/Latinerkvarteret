@@ -2,14 +2,45 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: Hind;
 }
 
 body{
   background-color: #ffffff;
 }
 
-header{
+.logotop{
+  display:flex;
+  justify-content: flex-start;
+  margin-left: 90%;
+  margin-top: 10px;
+
+}
+h1{
+  margin-top: -75px;
+  margin-left: 64%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
   margin: 0px;
+  background-color: ffffff;
+}
+
+.header a{
+  color: #737373;
+  font-family: Hind;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header li{
+  list-style: none; /* Removes the bullet points */
 }
 
 /* The slideshow in the header */
