@@ -153,16 +153,17 @@ nav{
 
 /* Footer */
 footer{
-  background-color: #ffff19;
   text-align: center;
 }
 .box {
+  text-align: left;
   float: left;
   width: 33.33%; /* Use 33.33% if there sould be 3 box/images */
   padding: 20px; /* if you want space between the images */
 }
 
-.clearfix::after {
+.clearfix::after { /* The ::after selector inserts something after the content of each selected element(s). */
+  content: " "; /* Older browser do not support empty content */
   clear: both;
   display: table;
 }
