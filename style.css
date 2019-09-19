@@ -61,8 +61,8 @@ nav{
   align-items: center; /* Centers items vertically */
   min-height: 8vh; /* The height or "thickness" of the menu bar background */
   background-color: #5d4954;
-  position: -webkit-sticky; /*safari*/
-  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  position: sticky; /* So that the nav bar sticks to the top */
   top: 0;
 }
 
