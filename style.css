@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: lightgrey;
+  background-color: #efefef;
 }
 
 .logotop{
@@ -77,7 +77,7 @@ nav{
 }
 
 .overskriften{
-	padding-top:-250px;
+	margin-top:-250px;
   padding-right: 550px;
   padding-left: 50px;
 }
