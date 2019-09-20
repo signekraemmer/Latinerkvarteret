@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: #ffffff;
+  background-color: lightgrey;
 }
 
 .logotop{
@@ -64,6 +64,9 @@ nav{
   position: sticky; /* So that the nav bar sticks to the top */
   top: 0;
 }
+
+
+
 
 /* Here starts the code for the navigation bar */
 
