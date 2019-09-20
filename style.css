@@ -15,14 +15,13 @@ body{
   margin-left: 90%;
   margin-top: 10px;
   margin-bottom: 40px;
-
 }
+
 h2{
   display: flex;
   justify-content: flex-end;
   margin-top: -95px;
   margin-left: 11%;
-
 }
 
 .header{
@@ -61,6 +60,9 @@ nav{
   align-items: center; /* Centers items vertically */
   min-height: 8vh; /* The height or "thickness" of the menu bar background */
   background-color: #5d4954;
+  position: -webkit-sticky; /* Safari */
+  position: sticky; /* So that the nav bar sticks to the top */
+  top: 0;
 }
 
 /* Here starts the code for the navigation bar */
@@ -125,8 +127,10 @@ nav{
 /* For mobile */
 @media screen and (max-width:768px){
   body{
-    overflow-x: hidden; /* Makes us unable to scroll at the bottom of the page, which in essence hides the container we pushed off-screen with transform translateX */
+    /* Makes us unable to scroll at the bottom of the page, which in essence hides the container we pushed off-screen with transform translateX */
+    overflow-x: hidden;
   }
+
   .navlinks{
     position: absolute;
     right: 0px; /* Makes it stick to the right side */
@@ -168,7 +172,7 @@ footer{
 }
 
 footer img{
-  
+
 }
 
 .box1 {
@@ -177,12 +181,14 @@ footer img{
   width: 33.33%; /* Use 33.33% if there sould be 3 box/images */
   padding: 20px; /* if you want space between the images */
 }
+
 .box2 {
   text-align: center;
   float: left;
   width: 33.33%; /* Use 33.33% if there sould be 3 box/images */
   padding: 20px; /* if you want space between the images */
 }
+
 .box3 {
   text-align: right;
   float: left;
