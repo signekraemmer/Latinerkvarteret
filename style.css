@@ -70,7 +70,7 @@ nav{
 .hvidbaggrund{
 	background-color: #ffffff;
   margin-top: 250px;
-	height: 600px;
+	height: 900px;
 	width: 1085px;
   margin-left: 90px;
 
@@ -85,13 +85,20 @@ nav{
 
 .linjen{
   padding-left: 500px;
-  margin-top: 500px;
-  margin-left: 500px;
-  margin-right: 500px;
-  margin-bottom: 500px;
+
 }
 
+.hvidbox2{
+  background-color: #ffffff;
+  height: 300px;
+  width: 1085px;
+  margin-top: 70px;
+}
 
+footer{
+  background-color: lightblue;
+  margin-top: 400px;
+}
 
 
 /* Here starts the code for the navigation bar */
