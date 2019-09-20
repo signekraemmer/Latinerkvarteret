@@ -61,6 +61,9 @@ nav{
   align-items: center; /* Centers items vertically */
   min-height: 8vh; /* The height or "thickness" of the menu bar background */
   background-color: #5d4954;
+  position: -webkit-sticky; /* Safari */
+  position: sticky; /* So that the nav bar sticks to the top */
+  top: 0;
 }
 
 /* Here starts the code for the navigation bar */
@@ -168,7 +171,7 @@ footer{
 }
 
 footer img{
-  
+
 }
 
 .box1 {
