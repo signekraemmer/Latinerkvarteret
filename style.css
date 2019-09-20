@@ -92,8 +92,10 @@ nav{
 }
 
 .linje{
-  border-left: 6px solid grey;
-  height: 500px;
+  border-left: 3px solid #efefef;
+  height: 800px;
+  margin-left: 600px;
+  margin-top: -310px;
 }
 
 footer{
