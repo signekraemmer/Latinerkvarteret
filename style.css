@@ -119,6 +119,9 @@ nav{
 /* TODO: Why the fuck are some of the boxes smaller then bigger etc.??? */
 /* Adjusts the link text */
 .navlinks a{
+  /* WARNING: IDE */
+  /* Gør punkterne en smule gennemsigtige */
+  opacity: 0.8;
   color: #FFFFFF; /* Color of the links */
   font-family: Hind;
   text-decoration: none; /* Removes the bars under the links */
@@ -128,6 +131,12 @@ nav{
   /* TODO: Not 100% mobile compatible */
   /* Padding top-bottom then left-right */
   padding: 4% 10vh;
+}
+
+/* WARNING: IDE */
+/* Evt. ide til at vise hvilken side man er på */
+.active{
+  opacity: 1 !important;
 }
 
 /* Adjusts the list items (in this case the style) */
@@ -168,12 +177,12 @@ nav{
   }
 
   .navlinks{
+    display: flex;
     position: absolute;
     right: 0px; /* Makes it stick to the right side */
     height: 92vh;
-    top: 8vh;
+    top: 7vh; /* Should be the same as navbar vh to touch it */
     background-color: #dbdbdb; /* The background of the new menu bar */
-    display: flex;
     flex-direction: column; /* Puts the menu points in a column, making them go down */
     align-items: center; /* Puts the menu points in the center of the column */
     width: 50%; /* The width of the menu column. T H I C C */
