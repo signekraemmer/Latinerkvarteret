@@ -83,6 +83,11 @@ nav{
   padding-top: 50px;
 }
 
+.text{
+  font-size: 14px;
+  text-align: justify;
+}
+
 .hvidbox2{
   background-color: #ffffff;
   height: 300px;
@@ -95,7 +100,7 @@ nav{
   border-left: 3px solid #efefef;
   height: 800px;
   margin-left: 600px;
-  margin-top: -310px;
+  margin-top: -250px;
 }
 
 footer{
