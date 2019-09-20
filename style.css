@@ -91,6 +91,11 @@ nav{
   margin-left: 90px;
 }
 
+.linje{
+  border-left: 6px solid grey;
+  height: 500px;
+}
+
 footer{
   background-color: lightblue;
   margin-top: 100px;
