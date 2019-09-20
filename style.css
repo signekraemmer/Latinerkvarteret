@@ -58,8 +58,8 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center; /* Centers items vertically */
-  min-height: 8vh; /* The height or "thickness" of the menu bar background */
-  background-color: #5d4954;
+  min-height: 7vh; /* The height or "thickness" of the menu bar background */
+  background-color: #dbdbdb; /* The color of the navbar BG */
   position: -webkit-sticky; /* Safari */
   position: sticky; /* So that the nav bar sticks to the top */
   top: 0;
@@ -77,13 +77,46 @@ nav{
   /* font-size: 28px; */
 /* } */
 
+#blue{
+  /* BG color of the id */
+  background-color: #409699;
+}
+
+#green{
+  /* BG color of the id */
+  background-color: #a3c759;
+}
+
+#yellow{
+  /* BG color of the id */
+  background-color: #ebcc4d;
+}
+
+#red{
+  /* BG color of the id */
+  background-color: #e84726;
+}
+
+#pink{
+  /* BG color of the id */
+  background-color: #edb8d1;
+}
+
+.navlinks a:hover{
+  /* The color of the BG when hovering */
+  background-color: #dbdbdb !important;
+  color: #000000;
+  /* The important tag overrides other CSS */
+}
+
 /* Adjusts the items inside the nav (in this case, their position) */
 .navlinks{
   display: flex;
   justify-content: space-around;
-  width: 35%; /* The width between the menu points */
+  width: 60vw; /* The width between the menu points */
 }
 
+/* TODO: Why the fuck are some of the boxes smaller then bigger etc.??? */
 /* Adjusts the link text */
 .navlinks a{
   color: #FFFFFF; /* Color of the links */
@@ -91,7 +124,10 @@ nav{
   text-decoration: none; /* Removes the bars under the links */
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 26px;
+  /* TODO: Not 100% mobile compatible */
+  /* Padding top-bottom then left-right */
+  padding: 4% 10vh;
 }
 
 /* Adjusts the list items (in this case the style) */
@@ -136,7 +172,7 @@ nav{
     right: 0px; /* Makes it stick to the right side */
     height: 92vh;
     top: 8vh;
-    background-color: #5d4954; /* The background of the new menu bar */
+    background-color: #dbdbdb; /* The background of the new menu bar */
     display: flex;
     flex-direction: column; /* Puts the menu points in a column, making them go down */
     align-items: center; /* Puts the menu points in the center of the column */
@@ -146,7 +182,7 @@ nav{
   }
 
   .navlinks li{
-    opacity: 0; /* Hides the menu points, by turning them invisible */
+    opacity: 1; /* Hides the menu points, by turning them invisible */
   }
 
   .burger{

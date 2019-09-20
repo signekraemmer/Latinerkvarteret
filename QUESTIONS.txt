@@ -1,0 +1,5 @@
+Hvorfor er mine bokse forskellig størrelse?
+
+Kan man få width til følge bredden af skærmen så menubaren altid er center?
+
+Hvorfor er min burger column displaced?
