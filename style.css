@@ -66,25 +66,25 @@ nav{
 }
 
 /*Her starter indeholdet - hvid baggrund og tekst*/
-}
+
 .hvidbaggrund{
-	background-color: white;
-	margin-top: -90px;
+	background-color: #ffffff;
+	margin-top: 290px;
 	height: 1200px;
 	width: 1050px;
-    margin-left: 100px;
-    margin-right: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .overskriften{
-	padding-top: 360px;
-    padding-right: 550px;
-    padding-left: 50px;
+	padding-top:-250px;
+  padding-right: 550px;
+  padding-left: 50px;
 }
 
 .line{
-    padding-left: 100px;
-    margin-top: -230px;
+  padding-left: 100px;
+  margin-top: -230px;
 }
 
 
