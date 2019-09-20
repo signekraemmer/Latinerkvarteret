@@ -69,22 +69,26 @@ nav{
 
 .hvidbaggrund{
 	background-color: #ffffff;
-	margin-top: 290px;
-	height: 1200px;
-	width: 1050px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-top: 250px;
+	height: 600px;
+	width: 1085px;
+  margin-left: 90px;
+
 }
 
 .overskriften{
 	margin-top:-250px;
   padding-right: 550px;
   padding-left: 50px;
+  padding-top: 50px;
 }
 
-.line{
-  padding-left: 100px;
-  margin-top: -230px;
+.linjen{
+  padding-left: 500px;
+  margin-top: 500px;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 500px;
 }
 
 
