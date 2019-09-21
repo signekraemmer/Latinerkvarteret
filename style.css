@@ -70,7 +70,7 @@ nav{
 .hvidbaggrund{
 	background-color: #ffffff;
   margin-top: 250px;
-	height: 900px;
+	height: 875px;
 	width: 85.9%;
   margin-left: 90px;
 
@@ -93,7 +93,7 @@ nav{
   background-color: #ffffff;
   height: 350px;
   width: 85.9%;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-left: 90px;
 }
 
@@ -105,14 +105,14 @@ nav{
 }
 /* Dette er anbefalingerne*/
 .anbefalinger{
-  margin-left: 60%;
-  margin-top: -725px;
+  margin-left: 62%;
+  margin-top: -795px;
 }
 .anboks{
     box-shadow: 0 6px 8px 0 black;
     width: 85%;
-    height: 190px;
-    margin-bottom: 13px;
+    height: 185px;
+    margin-bottom: 15px;
 }
 .antekst{
   text-align: right;
@@ -152,8 +152,8 @@ nav{
 }
 
 footer{
-  background-color: lightblue;
-  margin-top: 100px;
+  background-color: #409699;
+  margin-top: 50px;
 }
 
 
