@@ -103,11 +103,21 @@ nav{
   padding-left: 50px;
   padding-top: 70px;
 }
-.hvidbox2::after{
-  content: "";
-  clear: both;
-  display: table;
+/* Dette er anbefalingerne*/
+.anbefalinger{
+  margin-left: 60%;
+  margin-top: -725px;
 }
+.anboks{
+    box-shadow: 0 6px 8px 0 black;
+    width: 85%;
+    height: 190px;
+    margin-bottom: 13px;
+}
+.antekst{
+  float: right; 
+}
+
 /*Dette er selvfølgelig linjen*/
 .linje{
   border-left: 3px solid #efefef;
