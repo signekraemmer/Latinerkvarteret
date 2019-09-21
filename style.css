@@ -99,8 +99,9 @@ nav{
 
 .sidebyside{
   float: left;
-  width: 25%;
-  padding: 10px;
+  width: 23%;
+  padding-left: 50px;
+  padding-top: 70px;
 }
 .hvidbox2::after{
   content: "";
