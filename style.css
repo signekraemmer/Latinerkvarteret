@@ -115,7 +115,13 @@ nav{
     margin-bottom: 13px;
 }
 .antekst{
-  float: right; 
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-left: 170px;
+  margin-top: -200px;
+  font-size: 26px;
+
 }
 
 /*Dette er selvfølgelig linjen*/
