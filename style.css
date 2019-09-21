@@ -71,7 +71,7 @@ nav{
 	background-color: #ffffff;
   margin-top: 250px;
 	height: 900px;
-	width: 1085px;
+	width: 85.9%;
   margin-left: 90px;
 
 }
@@ -88,14 +88,26 @@ nav{
   text-align: justify;
 }
 
+/*Dette er den nederste hvide box med billede-tekst-billede-tekst*/
 .hvidbox2{
   background-color: #ffffff;
-  height: 300px;
-  width: 1085px;
+  height: 350px;
+  width: 85.9%;
   margin-top: 70px;
   margin-left: 90px;
 }
 
+.sidebyside{
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.hvidbox2::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+/*Dette er selvfølgelig linjen*/
 .linje{
   border-left: 3px solid #efefef;
   height: 800px;
@@ -103,7 +115,7 @@ nav{
   margin-top: -250px;
 }
 
-
+/*Dette er eventsbilleder med tekst under*/
 .event1{
   font-size: 14px;
   margin-top: -500px;
