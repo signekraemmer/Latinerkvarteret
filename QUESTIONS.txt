@@ -1,0 +1,15 @@
+Hvorfor er mine bokse forskellig størrelse i højden?
+
+Kan man få width til følge bredden af skærmen så menubaren altid er center?
+
+Burger menu hvordan sætter jeg mine items tættere sammen?
+
+
+
+
+
+
+
+LOGO er for langt ude
+
+Inherit column width to make items stretch?

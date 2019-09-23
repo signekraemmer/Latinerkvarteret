@@ -30,6 +30,7 @@
         <li><a class="Design">Design</a></li>
         <li><a class="Gastronomi">Gastronomi</a></li>
       </ul>
+
       <!-- Slideshow i headeren -->
       <script src="javascript.js" defer></script>
       <div class="slideshow">
@@ -49,11 +50,11 @@
         <img src="images/Logoheader.svg" alt="Logo of the website">
       </div>
       <ul class="navlinks">
-        <li><a href="#">Forside</a></li>
-        <li><a href="omraedet.html">Området</a></li>
-        <li><a href="#">Aktører</a></li> <!--skal hedde noget andet-->
-        <li><a href="events.html">Events</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a class="active" href="#" id="blue">Forside</a></li>
+        <li><a href="omraedet.html" id="green">Området</a></li>
+        <li><a href="aktoerer.html" id="yellow">Aktører</a></li> <!--skal hedde noget andet-->
+        <li><a href="events.html" id="red">Events</a></li>
+        <li><a href="kontakt.html" id="pink">Kontakt</a></li>
       </ul>
 
 <!-- The burger menu ICON -->
@@ -70,8 +71,83 @@
     </nav>
 
       <script src="navbar.js"></script>
-      <div class="gråboks">
-      </div>
+
+<!--Dette er den hvide baggrund-->
+<article class="hvidbaggrund">
+<!--Dette er apetizer teksten øverst til venstre på forsiden-->
+  <section class="overskriften">
+
+<h1>Latinerkvarteret - en kreativ Oase midt i Odense</h1><br>
+<p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst.
+  Nulla ultrices odio. Donec augue. Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti.
+  Nunc adipiscing euismod arcu. Quisque facilisis mattis lacus. Fusce bibendum, velit in venenatis viverra, tellus ligula dignissim felis, quis euismod mauris tellus ut urna. Proin scelerisque. Nulla in mi.
+  Integer ac leo. Nunc urna ligula, gravida a, pretium vitae, bibendum nec, ante. Aliquam ullamcorper iaculis lectus.</p>
+  </section>
+<!--Dette er linjen i den øverste hvide-baggrund box-->
+<div class="linje"></div>
+<!--Dette er de to billedelinks og teksten under-->
+<div class="event1">
+<a href="#"><img alt="H.C.AndersenFestival" src="images/Asset 1.png" height="150px" width="150px">
+</a>
+<br><br>
+<h3>H. C. Andersen Festival</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio. Donec augue.
+   Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti.
+   Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.</p>
+</div>
+
+<div class="event2">
+<a href="#"><img alt="H.C.AndersenFestival"src="images/Asset 1.png" height="150px" width="150px">
+</a>
+<br><br>
+<h3>Tartelet Festivalen</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio. Donec augue.
+   Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti.
+   Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.</p>
+</div>
+
+<article class="anbefalinger">
+
+<h3>Anbefalinger</h3><br>
+
+<div class="anboks">
+  <img src="images/Asset 1.png" alt="anbefaling1" height="170px" width="170px">
+  <p class="antekst">Lækker kaffe med lækker smag</p>
+</div>
+<div class="anboks">
+  <img src="images/Asset 1.png" alt="anbefaling2" height="170px" width="170px">
+  <p class="antekst">Lækker kaffe med lækker smag</p>
+</div>
+<div class="anboks">
+  <img src="images/Asset 1.png" alt="anbefaling3" height="170px" width="170px">
+  <p class="antekst">Lækker kaffe med lækker smag</p>
+</div>
+<br>
+<h4>Follow us in Facebook, Instagram and LinkdIn</h4>
+<p>Social Medier:</p>
+<br>
+<img src="images/facebook_icon.png" alt="facebook" height="35px" width="35px">
+
+</article>
+
+</article>
+
+</article>
+<!--Dette er den nederste hvide baggrundsbox-->
+<section class="hvidbox2">
+  <div class="sidebyside">
+  <img alt="Andre nyheder" src="images/Asset 1.png" height="180px" width="180px">
+</div>
+<div class="sidebyside">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst.</p>
+</div>
+<div class="sidebyside">
+  <img alt="Andre nyheder" src="images/Asset 1.png" height="180px" width="180px">
+</div>
+<div class="sidebyside">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst.</p>
+</div>
+</section>
 
     <footer>
 
@@ -110,5 +186,7 @@
       <p>Latinerkvarteret &copy; 2019</p>
     </footer>
   </body>
+<script type="text/javascript" src="navbar.js">
 
+</script>
 </html>
