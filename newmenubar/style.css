@@ -121,19 +121,6 @@ nav {
   /* Puts our column back into view */
 }
 
-/* Ghetto fix for keeping the menu points spaced nicely when full screen */
-@media screen and (max-width:1024px
-
-  /* The width at where the change happens */
-) {
-  .navlinks {
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
-    /* The width between the menu points */
-  }
-}
-
 /* For mobile */
 @media screen and (max-width:768px) {
   body {

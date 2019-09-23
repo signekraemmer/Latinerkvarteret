@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Hind;
+}
+
+body {
+  background-color: #efefef;
+}
+
+
+
+#blue {
+  /* BG color of the id */
+  background-color: #409699;
+}
+
+#green {
+  /* BG color of the id */
+  background-color: #a3c759;
+}
+
+#yellow {
+  /* BG color of the id */
+  background-color: #ebcc4d;
+}
+
+#red {
+  /* BG color of the id */
+  background-color: #e84726;
+}
+
+#pink {
+  /* BG color of the id */
+  background-color: #edb8d1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Centers items vertically */
+  min-height: 7vh;
+  /* The height or "thickness" of the menu bar background */
+  background-color: #dbdbdb;
+  /* The color of the navbar BG */
+}
+
+.navlinks a:hover {
+  /* The color of the BG when hovering */
+  background-color: #dbdbdb !important;
+  color: #000000;
+  /* The important tag overrides other CSS */
+}
+
+/* Adjusts the items inside the nav (in this case, their position) */
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+  /* The width between the menu points */
+}
+
+/* TODO: Why the fuck are some of the boxes smaller then bigger etc.??? */
+/* Adjusts the link text */
+.navlinks a {
+  /* WARNING: IDE */
+  /* Gør punkterne en smule gennemsigtige */
+  opacity: 0.8;
+  color: #FFFFFF;
+  /* Color of the links */
+  font-family: Hind;
+  text-decoration: none;
+  /* Removes the bars under the links */
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 26px;
+  /* TODO: Not 100% mobile compatible */
+  /* Padding top-bottom then left-right */
+  padding: 4% 10vh;
+}
+
+/* WARNING: IDE */
+/* Evt. ide til at vise hvilken side man er på */
+.active {
+  opacity: 1 !important;
+}
+
+/* Adjusts the list items (in this case the style) */
+.navlinks li {
+  list-style: none;
+  /* Removes the bullet points */
+  /* width: 20%; */
+}
+
+/* Here starts the code for the burger menu */
+/* Hides the burger menu on desktop */
+.burger {
+  display: none;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+/* The aesthetics of the burger menu */
+.burger div {
+  width: 25px;
+  /* How long the lines are */
+  height: 2px;
+  /* How "thick" the lines are */
+  background-color: #FFFFFF;
+  /* The color of the lines in the burger */
+  margin: 7px;
+  /* The spacing between the lines */
+}
+
+.nav-active {
+  transform: translateX(0%);
+  /* Puts our column back into view */
+}
+
+/* Ghetto fix for keeping the menu points spaced nicely when full screen */
+@media screen and (max-width:1024px
+
+  /* The width at where the change happens */
+) {
+  .navlinks {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    /* The width between the menu points */
+  }
+}
+
+/* For mobile */
+@media screen and (max-width:768px) {
+  body {
+    /* Makes us unable to scroll at the bottom of the page, which in essence hides the container we pushed off-screen with transform translateX */
+    overflow-x: hidden;
+  }
+
+  .navlinks {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    /* Makes it stick to the right side */
+    height: 92vh;
+    top: 7vh;
+    /* Should be the same as navbar vh to touch it */
+    background-color: #dbdbdb;
+    /* The background of the new menu bar */
+    flex-direction: column;
+    /* Puts the menu points in a column, making them go down */
+    align-items: center;
+    /* Puts the menu points in the center of the column */
+    width: 50%;
+    /* The width of the menu column. T H I C C */
+    transform: translateX(100%);
+    /* Moves the container, off the screen */
+    transition: transform 0.5s ease-in;
+    /* Makes the column ease in and out */
+  }
+
+  .navlinks li {
+    opacity: 1;
+    /* Hides the menu points, by turning them invisible */
+  }
+
+  .burger {
+    display: block;
+    /* Makes our burger menu visible */
+    cursor: pointer;
+    /* Turns the cursor into the tiny hand, with the tiny fingers, when hovering the burger */
+  }
+}
