@@ -1,0 +1,12 @@
+img{
+  position: absolute;
+  width: 100vw;
+}
+
+#post{
+  opacity: 0;
+}
+
+body{
+  overflow-x: hidden;
+}

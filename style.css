@@ -234,6 +234,7 @@ footer{
 /* Adjusts the list items (in this case the style) */
 .navlinks li{
   list-style: none; /* Removes the bullet points */
+  /* width: 20%; */
 }
 
 
