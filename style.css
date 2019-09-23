@@ -252,46 +252,6 @@ footer{
   margin: 7px; /* The spacing between the lines */
 }
 
-/* Ghetto fix for keeping the menu points spaced nicely when full screen */
-@media screen and (max-width:1024px/* The width at where the change happens */){
-  .navlinks{
-    display: flex;
-    justify-content: space-around;
-    width: 75%; /* The width between the menu points */
-  }
-}
-
-/* For mobile */
-@media screen and (max-width:768px){
-  body{
-    /* Makes us unable to scroll at the bottom of the page, which in essence hides the container we pushed off-screen with transform translateX */
-    overflow-x: hidden;
-  }
-
-  .navlinks{
-    display: flex;
-    position: absolute;
-    right: 0px; /* Makes it stick to the right side */
-    height: 92vh;
-    top: 7vh; /* Should be the same as navbar vh to touch it */
-    background-color: #dbdbdb; /* The background of the new menu bar */
-    flex-direction: column; /* Puts the menu points in a column, making them go down */
-    align-items: center; /* Puts the menu points in the center of the column */
-    width: 50%; /* The width of the menu column. T H I C C */
-    transform: translateX(100%); /* Moves the container, off the screen */
-    transition: transform 0.5s ease-in; /* Makes the column ease in and out */
-  }
-
-  .navlinks li{
-    opacity: 1; /* Hides the menu points, by turning them invisible */
-  }
-
-  .burger{
-    display: block; /* Makes our burger menu visible */
-    cursor: pointer; /* Turns the cursor into the tiny hand, with the tiny fingers, when hovering the burger */
-  }
-}
-
 .nav-active{
   transform: translateX(0%); /* Puts our column back into view */
 }
@@ -337,4 +297,44 @@ footer img{
   content: " "; /* Older browser do not support empty content */
   clear: both;
   display: inline;
+}
+
+/* Ghetto fix for keeping the menu points spaced nicely when full screen */
+@media screen and (max-width:1024px/* The width at where the change happens */){
+  .navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 75%; /* The width between the menu points */
+  }
+}
+
+/* For mobile */
+@media screen and (max-width:768px){
+  body{
+    /* Makes us unable to scroll at the bottom of the page, which in essence hides the container we pushed off-screen with transform translateX */
+    overflow-x: hidden;
+  }
+
+  .navlinks{
+    display: flex;
+    position: absolute;
+    right: 0px; /* Makes it stick to the right side */
+    height: 92vh;
+    top: 7vh; /* Should be the same as navbar vh to touch it */
+    background-color: #dbdbdb; /* The background of the new menu bar */
+    flex-direction: column; /* Puts the menu points in a column, making them go down */
+    align-items: center; /* Puts the menu points in the center of the column */
+    width: 50%; /* The width of the menu column. T H I C C */
+    transform: translateX(100%); /* Moves the container, off the screen */
+    transition: transform 0.5s ease-in; /* Makes the column ease in and out */
+  }
+
+  .navlinks li{
+    opacity: 1; /* Hides the menu points, by turning them invisible */
+  }
+
+  .burger{
+    display: block; /* Makes our burger menu visible */
+    cursor: pointer; /* Turns the cursor into the tiny hand, with the tiny fingers, when hovering the burger */
+  }
 }
