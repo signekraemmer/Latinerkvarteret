@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Hind;
+}
+
+
+/* Here starts the code for navbar */
+/* Color classes */
+.blue {
+  /* BG color of the id */
+  background-color: #409699;
+}
+
+.green {
+  /* BG color of the id */
+  background-color: #a3c759;
+}
+
+.yellow {
+  /* BG color of the id */
+  background-color: #ebcc4d;
+}
+
+.red {
+  /* BG color of the id */
+  background-color: #e84726;
+}
+
+.pink {
+  /* BG color of the id */
+  background-color: #edb8d1;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  /* Centers items vertically */
+  align-items: center;
+  /* The height or "thickness" of the menu bar background */
+  min-height: 6vh;
+  /* The color of the navbar BG */
+  background-color: #dbdbdb;
+}
+
+/* Adjusts the items inside the nav (in this case, their position) */
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlinks li {
+  /* Removes the bullet points */
+  list-style: none;
+  margin: 0vh 2vw 0vh 2vw;
+}
+
+.navlinks a {
+  /* Color of the link text */
+  color: #FFFFFF;
+  font-family: Hind;
+  /* Removes the bars under the links */
+  text-decoration: none;
+  /* Space between letters in the link text */
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.navlinks a:hover {
+  /* The color of the BG when hovering */
+  /* The important tag overrides other CSS */
+  background-color: #dbdbdb;
+  color: #000000;
+}
+
+/* Here starts the code for the burger menu */
+/* Hides the burger menu on desktop */
+.burger {
+  display: none;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+/* The aesthetics of the burger menu */
+.burger div {
+  width: 25px;
+  /* How long the lines are */
+  height: 2px;
+  /* How "thick" the lines are */
+  background-color: #FFFFFF;
+  /* The color of the lines in the burger */
+  margin: 6px;
+  /* The spacing between the lines */
+}

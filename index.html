@@ -1,158 +1,160 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- META beskrivelse -->
-    <meta name="description" content="Latinerkvarteret i Odense er en bydel med massere af liv, kultur og oplevelser.">
-    <!-- TODO: Ændre keywords -->
-    <meta name="keywords" content="keyword1,keyword2,keyword3">
 
-    <!-- TODO: Favicon skal laves 15x15 pixel -->
-    <link rel="shortcut icon" href="images/Latinerkvarterfavicon.png">
-    <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Hind:600&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- META beskrivelse -->
+  <meta name="description" content="Latinerkvarteret i Odense er en bydel med massere af liv, kultur og oplevelser.">
+  <!-- TODO: Ændre keywords -->
+  <meta name="keywords" content="keyword1,keyword2,keyword3">
 
-    <title>Forside | Latiner Kvarteret</title>
-  </head>
+  <!-- TODO: Favicon skal laves 15x15 pixel -->
+  <link rel="shortcut icon" href="images/Latinerkvarterfavicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind:600&display=swap" rel="stylesheet">
 
-  <body>
+  <title>Forside | Latiner Kvarteret</title>
+</head>
+
+<body>
 
 
-    <header>
-      <img src="images/Logoheader.png" alt="Logo" class="logotop">
-      <h2>Latinerkvarteret i Odense</h2>
-        <!-- The flashing text in the header -->
-      <ul class="header">
-        <li><a class="Kultur">Kultur</a></li>
-        <li><a class="Kunst">Kunst</a></li>
-        <li><a class="Mode">Mode</a></li>
-        <li><a class="Design">Design</a></li>
-        <li><a class="Gastronomi">Gastronomi</a></li>
-      </ul>
+  <header>
+    <img src="images/Logoheader.png" alt="Logo" class="logotop">
+    <h2>Latinerkvarteret i Odense</h2>
+    <!-- The flashing text in the header -->
+    <ul class="header">
+      <li><a class="Kultur">Kultur</a></li>
+      <li><a class="Kunst">Kunst</a></li>
+      <li><a class="Mode">Mode</a></li>
+      <li><a class="Design">Design</a></li>
+      <li><a class="Gastronomi">Gastronomi</a></li>
+    </ul>
 
-      <!-- Slideshow i headeren -->
-      <script src="javascript.js" defer></script>
-      <div class="slideshow">
-          <img class="mySlides" src="images/culturpsf.jpg" style="width:100%">
-          <img class="mySlides" src="images/artpsf.jpg" style="width:100%">
-          <img class="mySlides" src="images/designpsf.jpg" style="width:100%">
-          <img class="mySlides" src="images/foodpsff.jpg" style="width:100%">
-          <img class="mySlides" src="images/fashionpsf.jpg" style="width:100%">
+    <!-- Slideshow i headeren -->
+    <script src="javascript.js" defer></script>
+    <div class="slideshow">
+      <img class="mySlides" src="images/culturpsf.jpg" style="width:100%">
+      <img class="mySlides" src="images/artpsf.jpg" style="width:100%">
+      <img class="mySlides" src="images/designpsf.jpg" style="width:100%">
+      <img class="mySlides" src="images/foodpsff.jpg" style="width:100%">
+      <img class="mySlides" src="images/fashionpsf.jpg" style="width:100%">
+    </div>
+
+  </header>
+
+
+  <nav>
+    <!-- WARNING: Dump code for logo in navbar -->
+    <div class="logo">
+      <img src="images/Logoheader.svg" alt="Logo of the website">
+    </div>
+    <ul class="navlinks">
+      <li><a class="active" href="#" id="blue">Forside</a></li>
+      <li><a href="omraedet.html" id="green">Området</a></li>
+      <li><a href="aktoerer.html" id="yellow">Aktører</a></li>
+      <!--skal hedde noget andet-->
+      <li><a href="events.html" id="red">Events</a></li>
+      <li><a href="kontakt.html" id="pink">Kontakt</a></li>
+    </ul>
+
+    <!-- The burger menu ICON -->
+    <!-- These are the lines that make up the burger icon. SIGNE -->
+    <!-- If you add more lines it's gonna look like you smacked several Big Macs together -->
+    <!-- This is NOT where you add additional menu options to the navbar -->
+    <!-- For this, please refer to the above code within the class 'navlinks' -->
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+  </nav>
+
+  <script src="navbar.js"></script>
+
+  <!--Dette er den hvide baggrund-->
+  <article class="hvidbaggrund">
+    <!--Dette er apetizer teksten øverst til venstre på forsiden-->
+    <section class="overskriften">
+
+      <h1>Latinerkvarteret - en kreativ Oase midt i Odense</h1><br>
+      <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst.
+        Nulla ultrices odio. Donec augue. Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti.
+        Nunc adipiscing euismod arcu. Quisque facilisis mattis lacus. Fusce bibendum, velit in venenatis viverra, tellus ligula dignissim felis, quis euismod mauris tellus ut urna. Proin scelerisque. Nulla in mi.
+        Integer ac leo. Nunc urna ligula, gravida a, pretium vitae, bibendum nec, ante. Aliquam ullamcorper iaculis lectus.</p>
+    </section>
+    <!--Dette er linjen i den øverste hvide-baggrund box-->
+    <div class="linje"></div>
+    <!--Dette er de to billedelinks og teksten under-->
+    <div class="event1">
+      <a href="#"><img alt="H.C.AndersenFestival" src="images/Asset 1.png" height="150px" width="150px">
+      </a>
+      <br><br>
+      <h3>H. C. Andersen Festival</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio. Donec augue.
+        Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti.
+        Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.</p>
+    </div>
+
+    <div class="event2">
+      <a href="#"><img alt="H.C.AndersenFestival" src="images/Asset 1.png" height="150px" width="150px">
+      </a>
+      <br><br>
+      <h3>Tartelet Festivalen</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio. Donec augue.
+        Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti.
+        Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.</p>
+    </div>
+
+    <article class="anbefalinger">
+
+      <h3>Anbefalinger</h3><br>
+
+      <div class="anboks">
+        <img src="images/Asset 1.png" alt="anbefaling1" height="170px" width="170px">
+        <p class="antekst">Lækker kaffe med lækker smag</p>
       </div>
-
-    </header>
-
-
-    <nav>
-      <!-- WARNING: Dump code for logo in navbar -->
-      <div class="logo">
-        <img src="images/Logoheader.svg" alt="Logo of the website">
+      <div class="anboks">
+        <img src="images/Asset 1.png" alt="anbefaling2" height="170px" width="170px">
+        <p class="antekst">Lækker kaffe med lækker smag</p>
       </div>
-      <ul class="navlinks">
-        <li><a class="active" href="#" id="blue">Forside</a></li>
-        <li><a href="omraedet.html" id="green">Området</a></li>
-        <li><a href="aktoerer.html" id="yellow">Aktører</a></li> <!--skal hedde noget andet-->
-        <li><a href="events.html" id="red">Events</a></li>
-        <li><a href="kontakt.html" id="pink">Kontakt</a></li>
-      </ul>
-
-<!-- The burger menu ICON -->
-<!-- These are the lines that make up the burger icon. SIGNE -->
-<!-- If you add more lines it's gonna look like you smacked several Big Macs together -->
-<!-- This is NOT where you add additional menu options to the navbar -->
-<!-- For this, please refer to the above code within the class 'navlinks' -->
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="anboks">
+        <img src="images/Asset 1.png" alt="anbefaling3" height="170px" width="170px">
+        <p class="antekst">Lækker kaffe med lækker smag</p>
       </div>
+      <br>
+      <h4>Follow us in Facebook, Instagram and LinkdIn</h4>
+      <p>Social Medier:</p>
+      <br>
+      <img src="images/facebook_icon.png" alt="facebook" height="35px" width="35px">
 
-    </nav>
+    </article>
 
-      <script src="navbar.js"></script>
+  </article>
 
-<!--Dette er den hvide baggrund-->
-<article class="hvidbaggrund">
-<!--Dette er apetizer teksten øverst til venstre på forsiden-->
-  <section class="overskriften">
-
-<h1>Latinerkvarteret - en kreativ Oase midt i Odense</h1><br>
-<p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst.
-  Nulla ultrices odio. Donec augue. Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti.
-  Nunc adipiscing euismod arcu. Quisque facilisis mattis lacus. Fusce bibendum, velit in venenatis viverra, tellus ligula dignissim felis, quis euismod mauris tellus ut urna. Proin scelerisque. Nulla in mi.
-  Integer ac leo. Nunc urna ligula, gravida a, pretium vitae, bibendum nec, ante. Aliquam ullamcorper iaculis lectus.</p>
+  </article>
+  <!--Dette er den nederste hvide baggrundsbox-->
+  <section class="hvidbox2">
+    <div class="sidebyside">
+      <img alt="Andre nyheder" src="images/Asset 1.png" height="180px" width="180px">
+    </div>
+    <div class="sidebyside">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst.</p>
+    </div>
+    <div class="sidebyside">
+      <img alt="Andre nyheder" src="images/Asset 1.png" height="180px" width="180px">
+    </div>
+    <div class="sidebyside">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst.</p>
+    </div>
   </section>
-<!--Dette er linjen i den øverste hvide-baggrund box-->
-<div class="linje"></div>
-<!--Dette er de to billedelinks og teksten under-->
-<div class="event1">
-<a href="#"><img alt="H.C.AndersenFestival" src="images/Asset 1.png" height="150px" width="150px">
-</a>
-<br><br>
-<h3>H. C. Andersen Festival</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio. Donec augue.
-   Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti.
-   Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.</p>
-</div>
 
-<div class="event2">
-<a href="#"><img alt="H.C.AndersenFestival"src="images/Asset 1.png" height="150px" width="150px">
-</a>
-<br><br>
-<h3>Tartelet Festivalen</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio. Donec augue.
-   Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim. Aliquam aliquam sodales orci. Suspendisse potenti.
-   Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.</p>
-</div>
+  <footer>
 
-<article class="anbefalinger">
-
-<h3>Anbefalinger</h3><br>
-
-<div class="anboks">
-  <img src="images/Asset 1.png" alt="anbefaling1" height="170px" width="170px">
-  <p class="antekst">Lækker kaffe med lækker smag</p>
-</div>
-<div class="anboks">
-  <img src="images/Asset 1.png" alt="anbefaling2" height="170px" width="170px">
-  <p class="antekst">Lækker kaffe med lækker smag</p>
-</div>
-<div class="anboks">
-  <img src="images/Asset 1.png" alt="anbefaling3" height="170px" width="170px">
-  <p class="antekst">Lækker kaffe med lækker smag</p>
-</div>
-<br>
-<h4>Follow us in Facebook, Instagram and LinkdIn</h4>
-<p>Social Medier:</p>
-<br>
-<img src="images/facebook_icon.png" alt="facebook" height="35px" width="35px">
-
-</article>
-
-</article>
-
-</article>
-<!--Dette er den nederste hvide baggrundsbox-->
-<section class="hvidbox2">
-  <div class="sidebyside">
-  <img alt="Andre nyheder" src="images/Asset 1.png" height="180px" width="180px">
-</div>
-<div class="sidebyside">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst.</p>
-</div>
-<div class="sidebyside">
-  <img alt="Andre nyheder" src="images/Asset 1.png" height="180px" width="180px">
-</div>
-<div class="sidebyside">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy. Proin mollis lorem non dolor. In hac habitasse platea dictumst.</p>
-</div>
-</section>
-
-    <footer>
-
-      <div class="clearfix">
-        <div class="box1">
+    <div class="clearfix">
+      <div class="box1">
         <p>
           <h3>Mere om os:</h3>
           Butikker
@@ -167,9 +169,9 @@
           <a href="instagram.html"><img src="images/instagram_icon.png" alt="Instagram Ikon"></a><br>
           #latinerkvarteretodense
         </p>
-        </div>
+      </div>
 
-        <div class="box3">
+      <div class="box3">
         <p>
           <h3>Kontakt:</h3>
           <p> Jørgen Findsen <br>
@@ -181,12 +183,13 @@
             Dansk Kunsthåndværk <br>
             Brandts Passage 38 </p>
         </p>
-        </div>
       </div>
-      <p>Latinerkvarteret &copy; 2019</p>
-    </footer>
-  </body>
+    </div>
+    <p>Latinerkvarteret &copy; 2019</p>
+  </footer>
+</body>
 <script type="text/javascript" src="navbar.js">
 
 </script>
+
 </html>

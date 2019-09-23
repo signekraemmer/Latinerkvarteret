@@ -1,4 +1,4 @@
-document.getElementById("post").addEventListener("click", function(){postShow()});
+document.getElementById("post").addEventListener("click", postShow);
 console.log("After the click event");
 
 function postShow() {
