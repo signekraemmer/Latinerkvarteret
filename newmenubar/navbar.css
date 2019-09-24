@@ -109,9 +109,7 @@ nav {
   display: none;
 }
 
-.burger:hover {
-  cursor: pointer;
-}
+
 
 /* The aesthetics of the burger menu */
 .burger div {
@@ -198,7 +196,7 @@ nav {
     font-size: 26px;
     display: flex;
     /* Clickable area for the buttons */
-    padding: 29px 400px 29px 400px;
+    padding: 29px 50vw 29px 50vw;
   }
 
   .burger {
@@ -209,6 +207,10 @@ nav {
     /* Makes our burger menu visible */
     cursor: pointer;
     /* Turns the cursor into the tiny hand, with the tiny fingers, when hovering the burger */
+  }
+
+  .burger:hover {
+    cursor: pointer;
   }
 
   .nav-active {
