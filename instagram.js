@@ -36,41 +36,35 @@ var activatebtn = document.getElementsByClassName("activatebutton");
 activatebtn[0].addEventListener("click", showSlides);
 
 var slideIndex = 0;
-var kontakt = true;
 
 
 function showSlides() {
-  console.log("showslide running");
+  console.log("showSlide() running");
 
   var i;
   var slides = document.getElementsByClassName("mySlides");
 
-    console.log("Inside while loop");
-    // Makes the previous picture invisible
+  // Makes the previous picture invisible
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // The slide number
+  slideIndex++;
+
+  slides[slideIndex - 1].style.display = "block";
+
+  // Makes a slide visible
+  var timer = setTimeout(showSlides, 1000); // Change image every 4 seconds
+
+debugger;
+  // Stops the while loop
+  if (slideIndex == slides.length) {
+    clearTimeout(timer);
+
+    // The last frame get deleted instantly, and we need to figure out a way to keep it for x seconds
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-
-    // Stops the while loop
-    // if (slideIndex == 3) {
-    //   console.log("SlideIndex = " + slideIndex);
-    //   kontakt = false;
-    //   console.log("FALSE");
-    // }
-
-    // The slide number
-    slideIndex++;
-
-    if (slideIndex > slides.length) {
-      slideIndex = 1
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-
-
-
-    // Makes a slide visible
-    setTimeout(showSlides, 1000); // Change image every 4 seconds
-
-  // while (kontakt == true)
+  }
 }
