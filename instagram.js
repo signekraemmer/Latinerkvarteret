@@ -16,3 +16,31 @@ function postShow() {
     console.log("Turned Invisible");
   }
 }
+
+
+
+// InstaStory
+document.getElementsByClassName("activatebutton").addEventListener("click", showSlides);
+var slideIndex = 0;
+
+function showSlides() {
+  console.log("showslide running");
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  // Makes the previous picture invisible
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // The slide number
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+  }
+
+  // Makes a slide visible
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 1000); // Change image every 4 seconds
+}
