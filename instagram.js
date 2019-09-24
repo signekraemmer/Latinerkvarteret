@@ -36,19 +36,27 @@ var activatebtn = document.getElementsByClassName("activatebutton");
 activatebtn[0].addEventListener("click", showSlides);
 
 var slideIndex = 0;
+var kontakt = true;
+
 
 function showSlides() {
   console.log("showslide running");
 
-  var kontakt = true;
   var i;
   var slides = document.getElementsByClassName("mySlides");
 
-  while (kontakt == true) {
+    console.log("Inside while loop");
     // Makes the previous picture invisible
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
+
+    // Stops the while loop
+    // if (slideIndex == 3) {
+    //   console.log("SlideIndex = " + slideIndex);
+    //   kontakt = false;
+    //   console.log("FALSE");
+    // }
 
     // The slide number
     slideIndex++;
@@ -57,12 +65,12 @@ function showSlides() {
       slideIndex = 1
     }
 
-    // Makes a slide visible
     slides[slideIndex - 1].style.display = "block";
+
+
+
+    // Makes a slide visible
     setTimeout(showSlides, 1000); // Change image every 4 seconds
 
-    // if (slideIndex == slides.length) {
-    //   kontakt = false;
-    // }
-  }
+  // while (kontakt == true)
 }
