@@ -39,22 +39,30 @@ var slideIndex = 0;
 
 function showSlides() {
   console.log("showslide running");
+
+  var kontakt = true;
   var i;
   var slides = document.getElementsByClassName("mySlides");
 
-  // Makes the previous picture invisible
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  while (kontakt == true) {
+    // Makes the previous picture invisible
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    // The slide number
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }
+
+    // Makes a slide visible
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 1000); // Change image every 4 seconds
+
+    // if (slideIndex == slides.length) {
+    //   kontakt = false;
+    // }
   }
-
-  // The slide number
-  slideIndex++;
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1
-  }
-
-  // Makes a slide visible
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 1000); // Change image every 4 seconds
 }
