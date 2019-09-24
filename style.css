@@ -9,52 +9,13 @@ body {
   overflow-x: hidden;
   background-color: #efefef;
 }
-
+/*
 .logotop {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 90%;
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
+  position: absolute;
+  right: 10%;
+} */
 
-h2 {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -95px;
-  margin-left: 11%;
-}
 
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin-right: 55%;
-  background-color: ffffff;
-  width: 35%;
-}
-
-.header a {
-  color: #737373;
-  font-family: Hind;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 10px;
-}
-
-.header li {
-  list-style: none;
-  /* Removes the bullet points */
-}
-
-/* The slideshow in the header */
-.mySlides {
-  max-height: 300px;
-  display: none;
-}
-
-/* The flashing text in the header */
 /*Her starter indeholdet - hvid baggrund og tekst*/
 .hvidbaggrund {
   background-color: #ffffff;
