@@ -47,16 +47,22 @@ body {
 
 .dot {
   font-size: 20px;
+  font-weight: bold;
+  transform: translateX(0%);
+  transition: font-size 1s, transform 1s ease;
 }
 
 .active {
-  -webkit-text-stroke: 1px #FFFFFF;
+  font-size: 36px;
+  -webkit-text-stroke: 0.2px #000000;
      text-shadow:
          1px 1px 1 #FFFFFF,
        -1px -1px 1 #FFFFFF,
         1px -1px 1 #FFFFFF,
         -1px 1px 1 #FFFFFF,
          1px 1px 1 #FFFFFF;
+  transform: translateX(10%);
+  transition: font-size 1s, transform 1s ease;
 }
 
 /* Fading animation */
