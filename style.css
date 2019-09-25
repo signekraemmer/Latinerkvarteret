@@ -8,13 +8,75 @@
 body {
   overflow-x: hidden;
   background-color: #efefef;
+  margin: 0;
+  padding: 0;
 }
-/*
-.logotop {
-  position: absolute;
-  right: 10%;
-} */
+/* "Box" around the header */
+.header_wrapper{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+/* The slideshow w. pictures */
+.mySlides img {
+  vertical-align: middle;
+  width: 100%;
+  }
 
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: absolute;
+  top: 0vh;
+}
+
+
+/* Number text (1/3 etc) */
+.category {
+  font-weight: bold;
+  color: blue;
+  margin: 0px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 1vh;
+}
+
+.dot {
+  font-size: 20px;
+}
+
+.active {
+  -webkit-text-stroke: 1px #FFFFFF;
+     text-shadow:
+         1px 1px 1 #FFFFFF,
+       -1px -1px 1 #FFFFFF,
+        1px -1px 1 #FFFFFF,
+        -1px 1px 1 #FFFFFF,
+         1px 1px 1 #FFFFFF;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 /*Her starter indeholdet - hvid baggrund og tekst*/
 .hvidbaggrund {
