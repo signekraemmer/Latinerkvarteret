@@ -35,6 +35,8 @@ function postHide() {
 var activatebtn = document.getElementsByClassName("activatebutton");
 activatebtn[0].addEventListener("click", showSlides);
 
+// document.getElementById("igstorybtn").addEventListener("click", showSlides);
+
 var slideIndex = 0;
 
 
@@ -61,7 +63,7 @@ debugger;
   // Stops the while loop
   if (slideIndex == slides.length) {
     clearTimeout(timer);
-
+    slideIndex = 0;
     // The last frame get deleted instantly, and we need to figure out a way to keep it for x seconds
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
