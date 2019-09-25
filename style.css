@@ -170,8 +170,13 @@ body {
 }
 
 footer {
-  background-color: #409699;
+  margin-bottom: 0px;
   margin-top: 50px;
+    width: 100%;
+    background-image: url(images/footerpic.png);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
 /* Here starts the code for the navigation bar */
