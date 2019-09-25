@@ -11,7 +11,7 @@ body{
   overflow-x: hidden;
 }
 
-.activatebutton {
+#activatebutton {
   /* opacity: 0; */
   position: absolute;
   height: 150px;
@@ -30,6 +30,8 @@ body{
 }
 
 .mySlides{
+  z-index: 2;
   position: absolute;
   display: none;
+  width: 100vw;
 }
