@@ -1,0 +1,374 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Hind;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #efefef;
+}
+/*
+.logotop {
+  position: absolute;
+  right: 10%;
+} */
+
+
+/*Her starter indeholdet - hvid baggrund og tekst*/
+.hvidbaggrund {
+  background-color: #ffffff;
+  margin-top: 250px;
+  height: 875px;
+  width: 85.9%;
+  margin-left: 90px;
+}
+
+.overskriften {
+  margin-top: -250px;
+  padding-right: 550px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.text {
+  font-size: 14px;
+  text-align: justify;
+}
+
+/*Dette er den nederste hvide box med billede-tekst-billede-tekst*/
+.hvidbox2 {
+  background-color: #ffffff;
+  height: 350px;
+  width: 85.9%;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+
+.sidebyside {
+  float: left;
+  width: 23%;
+  padding-left: 50px;
+  padding-top: 70px;
+}
+
+/* Dette er anbefalingerne*/
+.anbefalinger {
+  margin-left: 62%;
+  margin-top: -795px;
+}
+
+.anboks {
+  box-shadow: 0 6px 8px 0 black;
+  width: 85%;
+  height: 185px;
+  margin-bottom: 15px;
+}
+
+.antekst {
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-left: 170px;
+  margin-top: -200px;
+  font-size: 26px;
+}
+
+/*Dette er selvfølgelig linjen*/
+.linje {
+  border-left: 3px solid #efefef;
+  height: 800px;
+  margin-left: 600px;
+  margin-top: -250px;
+}
+
+/*Dette er eventsbilleder med tekst under*/
+.event1 {
+  font-size: 14px;
+  margin-top: -500px;
+  text-align: justify;
+  margin-left: 310px;
+  float: right;
+  margin-right: 50%;
+}
+
+.event2 {
+  font-size: 14px;
+  margin-top: -500px;
+  margin-right: 45%;
+  text-align: justify;
+  margin-left: 45px;
+  margin-right: 75%;
+}
+
+footer {
+  background-color: #409699;
+  margin-top: 50px;
+}
+
+/* Here starts the code for the navigation bar */
+
+.searchicon {
+  display: flex;
+  margin-top: 12px;
+}
+
+.language {
+  display: flex;
+  margin-top: 12px;
+  padding-left: 12vw;
+}
+
+/* Color classes */
+.blue {
+  /* BG color of the id */
+  background-color: #409699;
+}
+
+.green {
+  /* BG color of the id */
+  background-color: #a3c759;
+  /* Gradient for the buttons */
+  /* background: linear-gradient(
+    to bottom,
+    #a3c759 0%,
+    #a3c759 50%,
+    #779141 100%
+    ); */
+}
+
+.yellow {
+  /* BG color of the id */
+  background-color: #ebcc4d;
+}
+
+.red {
+  /* BG color of the id */
+  background-color: #e84726;
+}
+
+.pink {
+  /* BG color of the id */
+  background-color: #edb8d1;
+}
+
+nav {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  /* Centers items vertically */
+  align-items: center;
+  /* The height or "thickness" of the menu bar background */
+  height: 50px;
+  /* Sorts the background color so it matches the end colors */
+  background: linear-gradient(
+    to right,
+    #409699 0%,
+    #409699 50%,
+    #edb8d1 50%,
+    #edb8d1 100%
+    );
+}
+
+/* Adjusts the items inside the nav (in this case, their position) */
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlinks li {
+  /* Removes the bullet points */
+  list-style: none;
+  margin: 0vh 0vw 0vh 0vw;
+  /*  */
+  flex: 0 0 200px;
+}
+
+.navlinks a {
+  /* Color of the link text */
+  color: #FFFFFF;
+  font-family: Hind;
+  /* Removes the bars under the links */
+  text-decoration: none;
+  /* Space between letters in the link text */
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  /* Button sizes - top, right, bottom, left */
+  padding: 5px 20px 4px 20px;
+}
+
+.navlinks a:hover {
+  /* Fun idea */
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 60%,
+    #FFFFFF 100%
+    );
+}
+
+/* Here starts the code for the burger menu */
+/* Hides the burger menu on desktop */
+.burger {
+  display: none;
+}
+
+/* The aesthetics of the burger menu */
+.burger div {
+  /* How long the lines are */
+  width: 30px;
+  /* How "thick" the lines are */
+  height: 4px;
+  /* The color of the lines in the burger */
+  background-color: #000000;
+  /* The spacing between the lines */
+  margin: 8px;
+}
+
+/* body */
+.gråboks {
+  background-color: #737373;
+  height: 100%;
+  width: 75%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+footer img {}
+
+.box1 {
+  text-align: left;
+  float: left;
+  width: 33.33%;
+  /* Use 33.33% if there sould be 3 box/images */
+  padding: 20px;
+  /* if you want space between the images */
+}
+
+.box2 {
+  text-align: center;
+  float: left;
+  width: 33.33%;
+  /* Use 33.33% if there sould be 3 box/images */
+  padding: 20px;
+  /* if you want space between the images */
+}
+
+.box3 {
+  text-align: right;
+  float: left;
+  width: 33.33%;
+  /* Use 33.33% if there sould be 3 box/images */
+  padding: 20px;
+  /* if you want space between the images */
+}
+
+.clearfix::after {
+  /* The ::after selector inserts something after the content of each selected element(s). */
+  content: " ";
+  /* Older browser do not support empty content */
+  clear: both;
+  display: inline;
+}
+
+/* For mobile */
+@media screen and (max-width:768px) {
+  body {
+    /* Makes us unable to scroll at the bottom of the page, which in essence hides the container we pushed off-screen with transform translateX */
+    overflow-x: hidden;
+  }
+
+  nav{
+    background: linear-gradient(
+      to right,
+        #dbdbdb 0%,
+        #dbdbdb 100%
+      );
+
+      /* background: linear-gradient(
+        to right,
+          #409699 20%,
+          #a3c759 40%,
+          #ebcc4d 60%,
+          #e84726 80%,
+          #edb8d1 100%
+        ); */
+    }
+
+    .navlinks {
+      z-index: -1;
+      display: flex;
+      position: absolute;
+      /* Makes it stick to the right side */
+      right: 0px;
+      height: 500px;
+      /* Should be the same as navbar to touch it */
+      top: 49.5px;
+      /* The background of the new menu bar */
+      background-color: #dbdbdb;
+      /* Puts the menu points in a column, making them go down */
+      flex-direction: column;
+      /* Puts the menu points in the center of the column */
+      align-items: center;
+      /* The width of the menu column. T H I C C */
+      width: 100%;
+      /* Moves the container, off the screen */
+      transform: translateY(-120%);
+      /* Makes the column ease in and out */
+      transition: transform 0.6s ease-in;
+    }
+
+    .navlinks li {
+      /* Hides the menu points, by turning them invisible */
+      opacity: 1;
+      /* Removes the bullet points */
+      list-style: none;
+      margin: 0vh 0vw 0vh 0vw;
+      flex: 0 0 100px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 100vw;
+    }
+
+    .navlinks a {
+      /* Color of the link text */
+      color: #FFFFFF;
+      font-family: Hind;
+      /* Removes the bars under the links */
+      text-decoration: none;
+      /* Space between letters in the link text */
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 26px;
+      display: flex;
+      /* Clickable area for the buttons */
+      padding: 29px 50vw 29px 50vw;
+    }
+
+    .burger {
+      position: absolute;
+      left: 2vw;
+      z-index: 1;
+      display: block;
+      /* Makes our burger menu visible */
+      cursor: pointer;
+      /* Turns the cursor into the tiny hand, with the tiny fingers, when hovering the burger */
+    }
+
+    .burger:hover {
+      cursor: pointer;
+    }
+
+    .nav-active {
+    transform: translateY(0%);
+    /* Puts our column back into view */
+  }
+}

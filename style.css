@@ -109,9 +109,15 @@ footer {
 
 /* Here starts the code for the navigation bar */
 
-/* WARNING: Dump code for the logo in navbar */
-.logo {
-  background-color: white;
+.searchicon {
+  display: flex;
+  margin-top: 12px;
+}
+
+.language {
+  display: flex;
+  margin-top: 12px;
+  padding-left: 12vw;
 }
 
 /* Color classes */
