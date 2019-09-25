@@ -450,4 +450,10 @@ footer img {}
   .header_wrapper{
     display: none;
   }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
 }
