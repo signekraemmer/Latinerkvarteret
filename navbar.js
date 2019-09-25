@@ -12,9 +12,10 @@
 // navSlide();
 // console.log("Burger click executed");
 
-document.getElementsByClassName("burger").addEventListener("click", navSlideOwn);
+var burger = document.getElementsByClassName("burger")
+burger.addEventListener("click", navSlideDown);
 
-function navSlideOwn() {
+function navSlideDown() {
   var nav = document.getElementsByClassName("navlinks");
   nav.classList.toggle("nav-active");
   console.log("Own Slider function executed");
