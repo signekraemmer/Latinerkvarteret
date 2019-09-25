@@ -442,10 +442,7 @@ footer img {}
     cursor: pointer;
   }
 
-  .nav-active {
-    transform: translateY(0%);
-    /* Puts our column back into view */
-  }
+
 
   .header_wrapper{
     display: none;
@@ -456,4 +453,9 @@ footer img {}
     flex-direction: column;
     display: none;
   }
+}
+
+.navactive {
+  transform: translateY(0%);
+  /* Puts our column back into view */
 }
