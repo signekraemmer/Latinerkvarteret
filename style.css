@@ -57,19 +57,15 @@ h1 {
   font-weight: bold;
   transform: translateX(0%);
   transition: font-size 1s, transform 1s ease;
+  margin-left: 6.2vw;
 }
 
 .active {
   font-size: 36px;
-  -webkit-text-stroke: 0.2px #000000;
-     text-shadow:
-         1px 1px 1 #FFFFFF,
-       -1px -1px 1 #FFFFFF,
-        1px -1px 1 #FFFFFF,
-        -1px 1px 1 #FFFFFF,
-         1px 1px 1 #FFFFFF;
+  -webkit-text-stroke: 2px #000000;
   transform: translateX(10%);
   transition: font-size 1s, transform 1s ease;
+  text-decoration: underline #000000;
 }
 
 /* Fading animation */
