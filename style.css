@@ -55,7 +55,7 @@ body {
 
 .active {
   font-size: 36px;
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px #FFFFFF;
   transform: translateX(10%);
   transition: font-size 1s, transform 1s ease;
 }
