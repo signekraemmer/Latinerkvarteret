@@ -11,8 +11,8 @@ body{
   overflow-x: hidden;
 }
 
-.activatebutton {
-  /*opacity: 0;*/
+#activatebutton {
+  opacity: 0;
   position: absolute;
   height: 150px;
   width: 150px;
@@ -25,11 +25,13 @@ body{
   left: 23.7vw;
 }
 
-.activatebutton:hover{
+#activatebutton:hover{
   cursor: pointer;
 }
 
 .mySlides{
+  z-index: 2;
   position: absolute;
   display: none;
+  width: 100vw;
 }

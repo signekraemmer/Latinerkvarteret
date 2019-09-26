@@ -8,13 +8,80 @@
 body {
   overflow-x: hidden;
   background-color: #efefef;
+  margin: 0;
+  padding: 0;
 }
-/*
-.logotop {
-  position: absolute;
-  right: 10%;
-} */
+/* "Box" around the header */
+.header_wrapper{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+/* The slideshow w. pictures */
+.mySlides img {
+  vertical-align: middle;
+  width: 100%;
+  }
 
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  top: 0vh;
+}
+
+
+/* Number text (1/3 etc) */
+.category {
+  font-weight: bold;
+  color: blue;
+  margin: 0px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 1vh;
+}
+
+.dot {
+  font-size: 20px;
+  font-weight: bold;
+  transform: translateX(0%);
+  transition: font-size 1s, transform 1s ease;
+}
+
+.active {
+  font-size: 36px;
+  -webkit-text-stroke: 0.2px #000000;
+     text-shadow:
+         1px 1px 1 #FFFFFF,
+       -1px -1px 1 #FFFFFF,
+        1px -1px 1 #FFFFFF,
+        -1px 1px 1 #FFFFFF,
+         1px 1px 1 #FFFFFF;
+  transform: translateX(10%);
+  transition: font-size 1s, transform 1s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 /*Her starter indeholdet - hvid baggrund og tekst*/
 .hvidbaggrund {
@@ -75,7 +142,7 @@ body {
   font-size: 26px;
 }
 
-/*Dette er selvfølgelig linjen*/
+/* Dette er selvfølgelig linjen */
 .linje {
   border-left: 3px solid #efefef;
   height: 800px;
@@ -83,7 +150,7 @@ body {
   margin-top: -250px;
 }
 
-/*Dette er eventsbilleder med tekst under*/
+/* Dette er eventsbilleder med tekst under */
 .event1 {
   font-size: 14px;
   margin-top: -500px;
@@ -102,16 +169,17 @@ body {
   margin-right: 75%;
 }
 
-footer {
-  background-color: #409699;
-  margin-top: 50px;
-}
 
 /* Here starts the code for the navigation bar */
+.searchicon {
+  display: flex;
+  margin-top: 12px;
+}
 
-/* WARNING: Dump code for the logo in navbar */
-.logo {
-  background-color: white;
+.language {
+  display: flex;
+  margin-top: 12px;
+  padding-left: 10vw;
 }
 
 /* Color classes */
@@ -148,7 +216,10 @@ footer {
 }
 
 nav {
-  z-index: -1;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+  z-index: 3;
   display: flex;
   justify-content: center;
   /* Centers items vertically */
@@ -156,13 +227,11 @@ nav {
   /* The height or "thickness" of the menu bar background */
   height: 50px;
   /* Sorts the background color so it matches the end colors */
-  background: linear-gradient(
-    to right,
-    #409699 0%,
-    #409699 50%,
-    #edb8d1 50%,
-    #edb8d1 100%
-    );
+  background: linear-gradient(to right,
+      #409699 0%,
+      #409699 50%,
+      #edb8d1 50%,
+      #edb8d1 100%);
 }
 
 /* Adjusts the items inside the nav (in this case, their position) */
@@ -197,11 +266,10 @@ nav {
 
 .navlinks a:hover {
   /* Fun idea */
-  background: linear-gradient(
-    to bottom,
-    #a3c759 0%,
-    #779141 100%
-    );
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 60%,
+      #FFFFFF 100%);
 }
 
 /* Here starts the code for the burger menu */
@@ -231,17 +299,22 @@ nav {
 
 /* Footer */
 footer {
+  margin-bottom: 0px;
+  margin-top: 50px;
+  width: 100%;
+  background-image: url(images/footer.png);
+  background-size: 100% ;
   text-align: center;
+  color: #FFFFFF;
 }
-
-footer img {}
 
 .box1 {
   text-align: left;
   float: left;
   width: 33.33%;
   /* Use 33.33% if there sould be 3 box/images */
-  padding: 20px;
+  padding-left: 6%;
+  padding-top: 20px;
   /* if you want space between the images */
 }
 
@@ -259,7 +332,8 @@ footer img {}
   float: left;
   width: 33.33%;
   /* Use 33.33% if there sould be 3 box/images */
-  padding: 20px;
+  padding-right: 8%;
+  padding-top: 20px;
   /* if you want space between the images */
 }
 
@@ -278,14 +352,11 @@ footer img {}
     overflow-x: hidden;
   }
 
-  nav{
-    background: linear-gradient(
-      to right,
+  nav {
+    background: linear-gradient(to right,
         #dbdbdb 0%,
-        #dbdbdb 100%
-      );
-
-      /* background: linear-gradient(
+        #dbdbdb 100%);
+    /* background: linear-gradient(
         to right,
           #409699 20%,
           #a3c759 40%,
@@ -293,75 +364,95 @@ footer img {}
           #e84726 80%,
           #edb8d1 100%
         ); */
-    }
-
-    .navlinks {
-      z-index: -1;
-      display: flex;
-      position: absolute;
-      /* Makes it stick to the right side */
-      right: 0px;
-      height: 500px;
-      /* Should be the same as navbar to touch it */
-      top: 49.5px;
-      /* The background of the new menu bar */
-      background-color: #dbdbdb;
-      /* Puts the menu points in a column, making them go down */
-      flex-direction: column;
-      /* Puts the menu points in the center of the column */
-      align-items: center;
-      /* The width of the menu column. T H I C C */
-      width: 100%;
-      /* Moves the container, off the screen */
-      transform: translateY(-120%);
-      /* Makes the column ease in and out */
-      transition: transform 0.6s ease-in;
-    }
-
-    .navlinks li {
-      /* Hides the menu points, by turning them invisible */
-      opacity: 1;
-      /* Removes the bullet points */
-      list-style: none;
-      margin: 0vh 0vw 0vh 0vw;
-      flex: 0 0 100px;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      width: 100vw;
-    }
-
-    .navlinks a {
-      /* Color of the link text */
-      color: #FFFFFF;
-      font-family: Hind;
-      /* Removes the bars under the links */
-      text-decoration: none;
-      /* Space between letters in the link text */
-      letter-spacing: 1px;
-      font-weight: bold;
-      font-size: 26px;
-      display: flex;
-      /* Clickable area for the buttons */
-      padding: 29px 50vw 29px 50vw;
-    }
-
-    .burger {
-      position: absolute;
-      left: 2vw;
-      z-index: 1;
-      display: block;
-      /* Makes our burger menu visible */
-      cursor: pointer;
-      /* Turns the cursor into the tiny hand, with the tiny fingers, when hovering the burger */
-    }
-
-    .burger:hover {
-      cursor: pointer;
-    }
-
-    .nav-active {
-    transform: translateY(0%);
-    /* Puts our column back into view */
   }
+
+  .searchicon {
+    display: none;
+  }
+
+  .language {
+    display: none;
+  }
+
+  .navlinks {
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    /* Makes it stick to the right side */
+    right: 0px;
+    height: 500px;
+    /* Should be the same as navbar to touch it */
+    top: 49.5px;
+    /* The background of the new menu bar */
+    background-color: #dbdbdb;
+    /* Puts the menu points in a column, making them go down */
+    flex-direction: column;
+    /* Puts the menu points in the center of the column */
+    align-items: center;
+    /* The width of the menu column. T H I C C */
+    width: 100%;
+    /* Moves the container, off the screen */
+    transform: translateY(-120%);
+    /* Makes the column ease in and out */
+    transition: transform 0.6s ease-in;
+  }
+
+  .navlinks li {
+    /* Hides the menu points, by turning them invisible */
+    opacity: 1;
+    /* Removes the bullet points */
+    list-style: none;
+    margin: 0vh 0vw 0vh 0vw;
+    flex: 0 0 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+  }
+
+  .navlinks a {
+    /* Color of the link text */
+    color: #FFFFFF;
+    font-family: Hind;
+    /* Removes the bars under the links */
+    text-decoration: none;
+    /* Space between letters in the link text */
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 26px;
+    display: flex;
+    /* Clickable area for the buttons */
+    padding: 29px 50vw 29px 50vw;
+  }
+
+  .burger {
+    position: absolute;
+    left: 2vw;
+    z-index: 1;
+    display: block;
+    /* Makes our burger menu visible */
+    cursor: pointer;
+    /* Turns the cursor into the tiny hand, with the tiny fingers, when hovering the burger */
+  }
+
+  .burger:hover {
+    cursor: pointer;
+  }
+
+
+
+  .header_wrapper{
+    display: none;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+}
+
+.navactive {
+  transform: translateY(0%);
+  /* Puts our column back into view */
 }
