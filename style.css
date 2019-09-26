@@ -335,6 +335,8 @@ footer {
   display: inline;
 }
 
+
+
 /* For mobile */
 @media screen and (max-width:768px) {
 
@@ -346,8 +348,8 @@ footer {
   nav {
     z-index: 2;
     background: linear-gradient(to right,
-        #dbdbdb 0%,
-        #dbdbdb 100%);
+        #FFFFFF 0%,
+        #FFFFFF 100%);
   }
 
   .searchicon {
@@ -426,6 +428,11 @@ footer {
     display: flex;
     flex-direction: column;
     display: none;
+  }
+
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
   }
 }
 
