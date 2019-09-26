@@ -180,12 +180,7 @@ main{
 .searchicon {
   display: flex;
   margin-top: 12px;
-}
-
-.language {
-  display: flex;
-  margin-top: 12px;
-  padding-left: 10vw;
+  margin-left: 10px;
 }
 
 /* Color classes */
@@ -356,10 +351,6 @@ footer {
   }
 
   .searchicon {
-    display: none;
-  }
-
-  .language {
     display: none;
   }
 
