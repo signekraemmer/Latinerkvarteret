@@ -340,11 +340,21 @@ footer {
   margin: 30px;
 }
 
-.column.center {
+.column.inner {
+  margin: 0px;
+}
+
+.column.timestwo {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.column.categories {
   text-align: center;
 }
 
-.column.center img {
+.column.categories img {
   /* Space between category name and the picture */
   padding-top: 15px;
   /* Space until the next picture */
