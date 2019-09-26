@@ -142,7 +142,7 @@ body {
   font-size: 26px;
 }
 
-/*Dette er selvfølgelig linjen*/
+/* Dette er selvfølgelig linjen */
 .linje {
   border-left: 3px solid #efefef;
   height: 800px;
@@ -150,7 +150,7 @@ body {
   margin-top: -250px;
 }
 
-/*Dette er eventsbilleder med tekst under*/
+/* Dette er eventsbilleder med tekst under */
 .event1 {
   font-size: 14px;
   margin-top: -500px;
@@ -169,15 +169,6 @@ body {
   margin-right: 75%;
 }
 
-footer {
-  margin-bottom: 0px;
-  margin-top: 50px;
-    width: 100%;
-    background-image: url(images/footerpic.png);
-    background-size: 100% ;
-    background-repeat: no-repeat;
-    position: absolute;
-}
 
 /* Here starts the code for the navigation bar */
 .searchicon {
@@ -308,17 +299,22 @@ nav {
 
 /* Footer */
 footer {
+  margin-bottom: 0px;
+  margin-top: 50px;
+  width: 100%;
+  background-image: url(images/footer.png);
+  background-size: 100% ;
   text-align: center;
+  color: #FFFFFF;
 }
-
-footer img {}
 
 .box1 {
   text-align: left;
   float: left;
   width: 33.33%;
   /* Use 33.33% if there sould be 3 box/images */
-  padding: 20px;
+  padding-left: 6%;
+  padding-top: 20px;
   /* if you want space between the images */
 }
 
@@ -336,7 +332,8 @@ footer img {}
   float: left;
   width: 33.33%;
   /* Use 33.33% if there sould be 3 box/images */
-  padding: 20px;
+  padding-right: 8%;
+  padding-top: 20px;
   /* if you want space between the images */
 }
 
