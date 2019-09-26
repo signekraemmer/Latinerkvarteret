@@ -11,12 +11,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  width: 1000px;
+}
+
 /* "Box" around the header */
 .header_wrapper{
   width: 100vw;
   margin: 0;
   padding: 0;
 }
+
 /* The slideshow w. pictures */
 .mySlides img {
   vertical-align: middle;
@@ -32,7 +40,6 @@ body {
   max-width: 100%;
   top: 0vh;
 }
-
 
 /* Number text (1/3 etc) */
 .category {
@@ -83,21 +90,43 @@ body {
   to {opacity: 1}
 }
 
-/*Her starter indeholdet - hvid baggrund og tekst*/
-.hvidbaggrund {
-  background-color: #ffffff;
-  margin-top: 250px;
-  height: 875px;
-  width: 85.9%;
-  margin-left: 90px;
+main{
+  text-align: center;
 }
 
-.overskriften {
+/*Her starter indeholdet - hvid baggrund og tekst*/
+.hvidbaggrund.flex{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hvidbaggrund {
+  box-shadow: 22px 22px 44px #dbdbdb;
+  background: #FFFFFF;
+  width: 90vw;
+  margin: 0 5vw 0 5vw;
+  max-width:
+}
+
+.hvidbaggrund p{
+  flex-grow: 1;
+  max-width: 100px;
+  background: #dbdbdb;
+  margin: .25rem;
+  padding: .25rem;
+}
+
+.hvidbaggrund img{
+  max-width: 10vw;
+}
+
+/* .overskriften {
   margin-top: -250px;
   padding-right: 550px;
   padding-left: 50px;
   padding-top: 50px;
-}
+} */
 
 .text {
   font-size: 14px;
@@ -106,11 +135,19 @@ body {
 
 /*Dette er den nederste hvide box med billede-tekst-billede-tekst*/
 .hvidbox2 {
-  background-color: #ffffff;
-  height: 350px;
-  width: 85.9%;
-  margin-top: 50px;
-  margin-left: 90px;
+  box-shadow: 22px 22px 44px #dbdbdb;
+  background: #FFFFFF;
+  height: 100px;
+  width: 90vw;
+  margin: 5vw 5vw 0 5vw;
+  max-width:
+}
+
+.hvidbox2 p{
+  max-width: 125px;
+  background: #dbdbdb;
+  margin: .25rem;
+  padding: .25rem;
 }
 
 .sidebyside {
@@ -120,7 +157,7 @@ body {
   padding-top: 70px;
 }
 
-/* Dette er anbefalingerne*/
+/* Dette er anbefalingerne */
 .anbefalinger {
   margin-left: 62%;
   margin-top: -795px;
@@ -150,26 +187,6 @@ body {
   margin-top: -250px;
 }
 
-/* Dette er eventsbilleder med tekst under */
-.event1 {
-  font-size: 14px;
-  margin-top: -500px;
-  text-align: justify;
-  margin-left: 310px;
-  float: right;
-  margin-right: 50%;
-}
-
-.event2 {
-  font-size: 14px;
-  margin-top: -500px;
-  margin-right: 45%;
-  text-align: justify;
-  margin-left: 45px;
-  margin-right: 75%;
-}
-
-
 /* Here starts the code for the navigation bar */
 .searchicon {
   display: flex;
@@ -184,34 +201,22 @@ body {
 
 /* Color classes */
 .blue {
-  /* BG color of the id */
   background-color: #409699;
 }
 
 .green {
-  /* BG color of the id */
   background-color: #a3c759;
-  /* Gradient for the buttons */
-  /* background: linear-gradient(
-    to bottom,
-    #a3c759 0%,
-    #a3c759 50%,
-    #779141 100%
-    ); */
 }
 
 .yellow {
-  /* BG color of the id */
   background-color: #ebcc4d;
 }
 
 .red {
-  /* BG color of the id */
   background-color: #e84726;
 }
 
 .pink {
-  /* BG color of the id */
   background-color: #edb8d1;
 }
 
@@ -290,6 +295,7 @@ nav {
   margin: 8px;
 }
 
+/* WARNING: IS THIS DUMP CODE? */
 /* body */
 .gråboks {
   background-color: #737373;
@@ -347,23 +353,17 @@ footer {
 
 /* For mobile */
 @media screen and (max-width:768px) {
+
   body {
     /* Makes us unable to scroll at the bottom of the page, which in essence hides the container we pushed off-screen with transform translateX */
     overflow-x: hidden;
   }
 
   nav {
+    z-index: 2;
     background: linear-gradient(to right,
         #dbdbdb 0%,
         #dbdbdb 100%);
-    /* background: linear-gradient(
-        to right,
-          #409699 20%,
-          #a3c759 40%,
-          #ebcc4d 60%,
-          #e84726 80%,
-          #edb8d1 100%
-        ); */
   }
 
   .searchicon {
@@ -375,7 +375,6 @@ footer {
   }
 
   .navlinks {
-    z-index: -1;
     display: flex;
     position: absolute;
     /* Makes it stick to the right side */
@@ -428,7 +427,7 @@ footer {
   .burger {
     position: absolute;
     left: 2vw;
-    z-index: 1;
+    z-index: 2;
     display: block;
     /* Makes our burger menu visible */
     cursor: pointer;
@@ -438,8 +437,6 @@ footer {
   .burger:hover {
     cursor: pointer;
   }
-
-
 
   .header_wrapper{
     display: none;
