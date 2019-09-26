@@ -1,1 +1,1 @@
-Need to increase the clickable space for the burger menu points
+Why did my code work perfectly before, however as we progessed and expanded our website, it demanded the variable, be named the array space of [0]?
