@@ -310,6 +310,11 @@ a:visited {
   margin: 50px;
 }
 
+.column.inner {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 /* If you want to have columns stacked on a site */
 .column.innerone {
   margin-left: 0px;
