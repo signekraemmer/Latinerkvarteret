@@ -279,6 +279,10 @@ a:visited {
   /* if you want space between the images */
 }
 
+.box2 img {
+  margin: 0px 10px;
+}
+
 .box3 {
   text-align: right;
   float: left;
