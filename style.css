@@ -355,7 +355,7 @@ a:visited {
 }
 
 .column img {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 /* For mobile */
