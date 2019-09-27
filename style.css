@@ -15,7 +15,6 @@ body {
 h1 {
   font-size: 32px;
   font-weight: bold;
-  width: 1000px;
 }
 
 /* "Box" around the header */
@@ -316,7 +315,7 @@ a:visited {
   flex: 1;
   text-align: left;
   /* Whitespace */
-  margin: 30px;
+  margin: 50px;
 }
 
 /* If you want to have columns stacked on a site */
@@ -337,6 +336,7 @@ a:visited {
 
 /* The column containing the category buttons */
 .column.categories {
+  flex: 0.5;
   text-align: center;
 }
 
