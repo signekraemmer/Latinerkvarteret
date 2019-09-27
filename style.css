@@ -313,6 +313,7 @@ a:visited {
   text-align: left;
   /* Whitespace */
   margin: 30px;
+  background: #dbdbdb;
 }
 
 /* If you want to have columns stacked on a site */
