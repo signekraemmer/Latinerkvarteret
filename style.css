@@ -359,6 +359,11 @@ a:visited {
   max-width: 100%;
 }
 
+.column.categories img:hover {
+  height: auto;
+  width: 90%;
+}
+
 /* For mobile */
 @media screen and (max-width:768px) {
   body {
