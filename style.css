@@ -384,7 +384,7 @@ a:visited {
     right: 0px;
     height: 500px;
     /* Should be the same as navbar to touch it */
-    top: 49.5px;
+    top: 50px;
     /* The background of the new menu bar */
     background-color: #dbdbdb;
     /* Puts the menu points in a column, making them go down */
