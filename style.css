@@ -317,13 +317,15 @@ a:visited {
   text-align: left;
   /* Whitespace */
   margin: 30px;
-  background: #dbdbdb;
 }
 
 /* If you want to have columns stacked on a site */
-.column.inner {
-  margin: 0px;
-  background: #FFFFFF;
+.column.innerone {
+  margin-left: 0px;
+}
+
+.column.innertwo {
+  margin-right: 0px;
 }
 
 /* A column which is 2x as big */
