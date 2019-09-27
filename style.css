@@ -221,14 +221,6 @@ nav {
   margin: 8px;
 }
 
-/* WARNING: IS THIS DUMP CODE? */
-/* body */
-.gråboks {
-  background-color: #737373;
-  height: 100%;
-  width: 75%;
-}
-
 /* Footer */
 footer {
   margin-bottom: 0px;
@@ -351,7 +343,11 @@ a:visited {
 .column.line {
   background: #dbdbdb;
   max-width: 5px;
-  margin: 30px 0px;
+  margin: 50px 0px;
+}
+
+.column.overskriften {
+  margin-bottom: 0px;
 }
 
 .column img {
@@ -372,9 +368,9 @@ a:visited {
         #FFFFFF 100%);
   }
 
-  .searchicon {
+  /* .searchicon {
     display: none;
-  }
+  } */
 
   .navlinks {
     display: flex;
@@ -393,7 +389,7 @@ a:visited {
     /* The width of the menu column. T H I C C */
     width: 100%;
     /* Moves the container, off the screen */
-    transform: translateY(-120%);
+    transform: translateY(-130%);
     /* Makes the column ease in and out */
     transition: transform 0.6s ease-in;
   }
