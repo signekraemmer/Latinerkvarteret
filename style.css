@@ -300,6 +300,7 @@ footer {
 /* If you want to have columns stacked on a site */
 .column.inner {
   margin: 0px;
+  background: #FFFFFF;
 }
 
 /* A column which is 2x as big */
