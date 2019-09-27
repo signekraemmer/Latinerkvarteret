@@ -65,7 +65,7 @@ h1 {
   -webkit-text-stroke: 1px #FFFFFF;
   transform: translateX(10%);
   transition: font-size 1s, transform 1s ease;
-  
+
 }
 
 /* Fading animation */
@@ -294,6 +294,7 @@ footer {
   text-align: left;
   /* Whitespace */
   margin: 30px;
+  background: #dbdbdb;
 }
 
 /* If you want to have columns stacked on a site */
