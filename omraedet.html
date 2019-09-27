@@ -1,117 +1,247 @@
 <!DOCTYPE html>
-<html lang="da" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- META beskrivelse -->
-    <meta name="description" content="Latinerkvarteret i Odense er en bydel med massere af liv, kultur og oplevelser.">
-    <!-- TODO: Ændre keywords -->
-    <meta name="keywords" content="keyword1,keyword2,keyword3">
+<html lang="da">
 
-    <!-- TODO: Favicon skal laves 15x15 pixel -->
-    <link rel="shortcut icon" href="images/Latinerkvarterfavicon.png">
-    <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Hind:600&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- META beskrivelse -->
+  <meta name="description" content="Latinerkvarteret i Odense er en bydel med massere af liv, kultur og oplevelser.">
+  <!-- TODO: Ændre keywords -->
+  <meta name="keywords" content="keyword1,keyword2,keyword3">
 
-    <title>Forside | Latiner Kvarteret</title>
-  </head>
+  <!-- TODO: Favicon skal laves 15x15 pixel -->
+  <link rel="shortcut icon" href="images/Latinerkvarterfavicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind:600&display=swap" rel="stylesheet">
 
-  <body>
+  <title>Forside | Latinerkvarteret</title>
+</head>
 
+<body>
 
-    <header>
-      <img src="images/Logoheader.png" alt="Logo" class="logotop">
-      <h2> Latinerkvarteret i Odense </h2>
-        <!-- The flashing text in the header -->
-      <ul class="header">
-        <li><a class="Kultur">Kultur</a></li>
-        <li><a class="Kunst">Kunst</a></li>
-        <li><a class="Mode">Mode</a></li>
-        <li><a class="Design">Design</a></li>
-        <li><a class="Gastronomi">Gastronomi</a></li>
-      </ul>
+  <header>
+    <div class="header_wrapper">
 
-      <!-- Slideshow i headeren -->
-      <script src="javascript.js" defer></script>
-      <div class="slideshow">
-          <img class="mySlides" src="images/culturpsf.jpg" style="width:100%">
-          <img class="mySlides" src="images/artpsf.jpg" style="width:100%">
-          <img class="mySlides" src="images/designpsf.jpg" style="width:100%">
-          <img class="mySlides" src="images/foodpsff.jpg" style="width:100%">
-          <img class="mySlides" src="images/fashionpsf.jpg" style="width:100%">
+      <div class="slideshow-container">
+        <!--skift billede-->
+        <div class="mySlides fade">
+          <img src="images/Header/culture.png" alt="Billede af Amfiscenen">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Header/art.png" alt="Billede af et vægmaleri i Brandts Passage">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Header/fashion.png" alt="Billede af tøj på række">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Header/design.png" alt="Billede af nogen glaseringstoppe med øjne fra butik">
+        </div>
+        <!--skift billede-->
+        <div class="mySlides fade">
+          <img src="images/Header/gastronomy.png" alt="Billede af kaffekop med kaffe i">
+        </div>
       </div>
 
-    </header>
-
-
-    <nav>
-      <!-- WARNING: Dump code for logo in navbar -->
-      <!-- <div class="logo">
-        <img src="images/Latinerkvarterfavicon.png" alt="Logo of the website">
-      </div> -->
-      <ul class="navlinks">
-        <li><a href="index.html" id="blue">Forside</a></li>
-        <li><a class="active" href="#" id="green">Området</a></li>
-        <li><a href="aktoerer.html" id="yellow">Aktører</a></li> <!--skal hedde noget andet-->
-        <li><a href="events.html" id="red">Events</a></li>
-        <li><a href="kontakt.html" id="pink">Kontakt</a></li>
-      </ul>
-
-<!-- The burger menu ICON -->
-<!-- These are the lines that make up the burger icon. SIGNE -->
-<!-- If you add more lines it's gonna look like you smacked several Big Macs together -->
-<!-- This is NOT where you add additional menu options to the navbar -->
-<!-- For this, please refer to the above code within the class 'navlinks' -->
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="category">
+        <span class="dot" style="color: #409699;">KULTUR</span>
+        <span class="dot" style="color: #a3c759;">KUNST</span>
+        <span class="dot" style="color: #ebcc4d;">MODE</span>
+        <span class="dot" style="color: #e84726;">DESIGN</span>
+        <span class="dot" style="color: #edb8d1;">GASTRONOMI</span>
       </div>
 
-    </nav>
+    </div>
 
-      <script src="navbar.js"></script>
-      <div class="gråboks">
+
+  </header>
+
+  <nav>
+    <ul class="navlinks">
+      <li class="blue"><a href="#">Forside</a></li>
+      <li class="green"><a href="omraedet.html">Området</a></li>
+      <li class="yellow"><a href="aktoerer.html">Aktører</a></li>
+      <li class="red"><a href="events.html">Events</a></li>
+      <li class="pink"><a href="kontakt.html">Kontakt</a></li>
+      <!-- <li><img class="searchicon" src="images/searchicon.png" alt="Billede af søgeikon"></li> -->
+    </ul>
+
+    <!-- The burger menu ICON -->
+    <!-- These are the lines that make up the burger icon. SIGNE -->
+    <!-- If you add more lines it's gonna look like you smacked several Big Macs together -->
+    <!-- This is NOT where you add additional menu options to the navbar -->
+    <!-- For this, please refer to the above code within the class 'navlinks' -->
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+  </nav>
+
+  <main>
+
+    <!--Dette er den øverste hvide baggrund-->
+    <article class="hvidbaggrund flex">
+
+      <!-- First row -->
+      <div class="row">
+
+        <section class="column overskriften">
+          <h1>Et Område fyldt med atmosfære og oplevelser</h1>
+        </section>
+
       </div>
 
-    <footer>
 
-      <div class="clearfix">
-        <div class="box1">
+<!-- Second row -->
+<div class="row">
+
+  <div class="column timestwo">
+    <h3>Odenses Latinerkvarter emmer af god atmosfære, rustikke indtryk, oplevelser og liv</h3>
+
+  <br><img src="images/billederforside/odenseoase.png" alt="Odense - en kreativ oase midt i Odense">
+    <br>
+    <br>
+    <p>Odenses latinerkvarter er indbegrebet af det kreative og det skæve miljø samlet under åben himmel i hjertet af Odense City.
+          Området er fyldt af atmosfære og forener det traditionsbundne og det moderne i en harmonisk helhed.
+          For andre steder oplever du sprudlende byliv med caféer, livsstilsbutikker, mode med meget mere blandet med kunst, kultur og ikke mindst natur lige om hjørnet.
+
+
+  <div class="column innerone">
+    <h3>Odenses Latinerkvarter emmer af god atmosfære, rustikke indtryk, oplevelser og liv</h3>
+
+          <br><img src="images/billederforside/odenseoase.png" alt="Odense - en kreativ oase midt i Odense">
+              <br>
+              <br>
+              <p>Odenses latinerkvarter er indbegrebet af det kreative og det skæve miljø samlet under åben himmel i hjertet af Odense City.
+              Området er fyldt af atmosfære og forener det traditionsbundne og det moderne i en harmonisk helhed.
+              For andre steder oplever du sprudlende byliv med caféer, livsstilsbutikker, mode med meget mere blandet med kunst, kultur og ikke mindst natur lige om hjørnet.
+</div>
+</div>
+
+
+
+
+<div class="row">
+
+
+
+        </div>
+
+
+        </div>
+
+        <div class="column line"></div>
+
+        <div class="column categories">
+
+          <h3>Kultur</h3>
+          <a href="facebook.com"><img src="images/circles/kultur.png" alt="kultur knap"></a>
+
+          <h3>Kunst</h3>
+          <img src="images/circles/kunst.png" alt="kunst knap">
+
+          <h3>Mode</h3>
+          <img src="images/circles/mode.png" alt="mode knap">
+
+          <h3>Design</h3>
+          <img src="images/circles/design.png" alt="design knap">
+
+          <h3>Gastronomi</h3>
+          <img src="images/circles/gastronomi.png" alt="gastonomi knap">
+
+        </div>
+
+      </div>
+
+    </article>
+    <!--Dette er den nederste hvide baggrundsbox-->
+    <section class="hvidbox2 flex">
+
+      <!-- Third row -->
+      <div class="row">
+
+        <div class="column">
+
+          <img src="images/billederforside/nelles.jpg" alt="">
+          <br>
+          <br>
+          <h3> Ugens Butik: Nelle's</h3>
+          <br>
+          <p>Var det noget med en mocca til de tidlige morgener?
+            Måske en Café Latte til de sene eftermiddage? Eller måske en te til de kolde aftener?
+            Besøg Nelle’s som er blevet kåret til månedes butik. Se de mange grunde her...</p>
+
+
+        </div>
+
+        <div class="column">
+
+          <img src="images/billederforside/kunstkrukke.png" alt="kunst at finde i Odense latinerkvarter">
+          <br>
+          <br>
+          <h3> Trafikken: Citybusser</h3>
+          <br>
+          <p>Er du i tvivl om hvornår citybusserne kører?
+            Ja, måske endda i tvivl om hvorhenne de kører? Find flere oplysninger herom ved at klikke videre.
+            Her kan du se kort, køreplaner og tider.</p>
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="clearfix">
+      <!-- Der skal oprettes nogen links til undersider her! -->
+      <div class="box1">
         <p>
           <h3>Mere om os:</h3>
-          Butikker
+          <a href="#">Forside</a> <br>
+          <a href="#">Området</a> <br>
+          <a href="#">Aktører</a> <br>
+          <a href="#">Events</a> <br>
+          <a href="#">Kontakt</a> <br>
         </p>
       </div>
 
       <div class="box2">
         <p>
-          <h3>Følg os på:</h3> <br>
+          <h3>Følg os på:</h3>
+          <br>
           <!-- TODO: Link til sociale medier  -->
-          <a href="https://www.facebook.com/LatinerkvarteretOdense/?epa=SEARCH_BOX"><img src="images/facebook_icon.png" alt="Facebook Ikon"></a>
-          <a href="INDSÆT LINK HER"><img src="images/instagram_icon.png" alt="Instagram Ikon"></a><br>
+          <a href="https://www.facebook.com/LatinerkvarteretOdense/?epa=SEARCH_BOX" target="_blank"><img src="images/facebook_icon.png" alt="Facebook Ikon"></a>
+          <a href="instagram.html" target="_blank"><img src="images/instagram_icon.png" alt="Instagram Ikon"></a><br>
           #latinerkvarteretodense
         </p>
-        </div>
+      </div>
 
-        <div class="box3">
+      <div class="box3">
         <p>
           <h3>Kontakt:</h3>
           <p> Jørgen Findsen <br>
-            +45 20419589 <br>
-            Vestergade 104
-          </p> <br>
+            +45 20419589</p> <br>
           <p> Dina Vejling <br>
             +45 66111405 <br>
-            Dansk Kunsthåndværk <br>
-            Brandts Passage 38 </p>
+            Dansk Kunsthåndværk </p><br><br>
         </p>
-        </div>
       </div>
-      <p>Latinerkvarteret &copy; 2019</p>
-    </footer>
-  </body>
-<script type="text/javascript" src="navbar.js">
+    </div>
+    <p>Latinerkvarteret &copy; 2019</p>
+  </footer>
 
-</script>
+</body>
+
+<script type="text/javascript" src="navbar.js"></script>
+<script src="javascript.js"></script>
+
 </html>
