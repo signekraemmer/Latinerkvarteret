@@ -343,6 +343,10 @@ a:visited {
   text-align: center;
 }
 
+.column.contact {
+  background: #ECECEC;
+}
+
 .column.categories img {
   /* Space between category name and the picture */
   padding-top: 15px;
