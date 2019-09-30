@@ -499,3 +499,8 @@ a:visited {
   color: #000000 !important;
   font-size: 15px;
 }
+.kontaktlink{
+  color: #000000 !important;
+  font-size: 17px;
+  text-decoration: none;
+}
