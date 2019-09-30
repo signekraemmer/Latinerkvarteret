@@ -253,12 +253,12 @@ footer {
 }
 
 /* unvisited link */
-a:link {
+.box1 a:link {
   color: white;
 }
 
 /* visited link */
-a:visited {
+.box1 a:visited {
   color: white;
 }
 
