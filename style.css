@@ -253,12 +253,12 @@ footer {
 }
 
 /* unvisited link */
-.box1 a:link {
+a:link {
   color: white;
 }
 
 /* visited link */
-.box1 a:visited {
+a:visited {
   color: white;
 }
 
@@ -344,16 +344,7 @@ footer {
 }
 
 .column.contact {
-  border-style: solid;
-}
-
-.column.icons {
-  max-width: 35px;
-  margin: 50px 0px 50px 0px;
-}
-
-#contactheadline {
-  margin: 25px 15px 15px 50px;
+  background: #ECECEC;
 }
 
 .column.categories img {
@@ -486,7 +477,7 @@ footer {
   transform: translateY(0%);
   /* Puts our column back into view */
 }
-
 .tartlink{
-  color: #000000;
+  color: #000000 !important;
+  font-size: 15px;
 }
