@@ -253,12 +253,12 @@ footer {
 }
 
 /* unvisited link */
-.box1 a:link {
+a:link {
   color: white;
 }
 
 /* visited link */
-.box1 a:visited {
+a:visited {
   color: white;
 }
 
@@ -486,7 +486,7 @@ footer {
   transform: translateY(0%);
   /* Puts our column back into view */
 }
-
 .tartlink{
-  color: #000000;
+  color: #000000 !important;
+  font-size: 15px;
 }
