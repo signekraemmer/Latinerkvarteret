@@ -67,7 +67,7 @@ p {
 
 .active {
   font-size: 36px;
-  -webkit-text-stroke: 1px #FFFFFF;
+  -webkit-text-stroke: 0.1px #FFFFFF;
   transform: translateX(10%);
   transition: font-size 1s, transform 1s ease;
 
