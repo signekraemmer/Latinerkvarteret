@@ -383,6 +383,12 @@ a:visited {
   width: 90%;
 }
 
+.column.list{
+  list-style-type: none;
+  margin: 20px 0px 0px 0px;
+}
+
+.
 /* For mobile */
 @media screen and (max-width:768px) {
   body {
