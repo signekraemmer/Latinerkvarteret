@@ -383,8 +383,11 @@ a:visited {
   width: 90%;
 }
 
-.column.list{
+.column ul{
   list-style-type: none;
+}
+
+.column.list {
   margin: 20px 0px 0px 0px;
 }
 
