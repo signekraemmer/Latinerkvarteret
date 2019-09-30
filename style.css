@@ -253,12 +253,12 @@ footer {
 }
 
 /* unvisited link */
-a:link {
+.box1 a:link {
   color: white;
 }
 
 /* visited link */
-a:visited {
+.box1 a:visited {
   color: white;
 }
 
@@ -344,7 +344,16 @@ a:visited {
 }
 
 .column.contact {
-  background: #ECECEC;
+  border-style: solid;
+}
+
+.column.icons {
+  max-width: 35px;
+  margin: 50px 0px 50px 0px;
+}
+
+#contactheadline {
+  margin: 25px 15px 15px 50px;
 }
 
 .column.categories img {
