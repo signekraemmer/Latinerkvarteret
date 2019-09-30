@@ -352,6 +352,10 @@ a:visited {
   margin: 50px 0px 50px 0px;
 }
 
+.column.icons img {
+  margin: 5px 0px 5px 0px; 
+}
+
 #contactheadline {
   margin: 25px 15px 15px 50px;
 }
