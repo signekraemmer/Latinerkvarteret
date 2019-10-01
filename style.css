@@ -352,6 +352,10 @@ a:visited {
   margin: 50px 0px 50px 0px;
 }
 
+.column.icons img {
+  margin: 5px 0px 5px 0px;
+}
+
 #contactheadline {
   margin: 25px 15px 15px 50px;
 }
@@ -361,6 +365,10 @@ a:visited {
   padding-top: 15px;
   /* Space until the next picture */
   padding-bottom: 40px;
+}
+
+.column.hvidbox2txt {
+  margin: 50px 50px 50px 0px;
 }
 
 /* The grey line - OMG IT'S RESPONSIVE!!! */
@@ -391,7 +399,11 @@ a:visited {
   margin: 20px 0px 0px 0px;
 }
 
-.
+#bottomheader {
+  margin: 0px 50px 0px 50px;
+  padding-top: 50px;
+}
+
 /* For mobile */
 @media screen and (max-width:768px) {
   body {
